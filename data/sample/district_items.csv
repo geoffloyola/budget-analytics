@@ -1,0 +1,149 @@
+fiscal_year,stage,department_code,agency_code,item,province,district,municipality,category,amount_thousands,source
+2023,NEP,DPWH,DPWH-OSEC,"Roads project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Roads,137246,SAMPLE
+2023,NEP,DPWH,DPWH-OSEC,"Roads project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Roads,111938,SAMPLE
+2023,NEP,DPWH,DPWH-OSEC,"Roads project 3, Municipality C (sample)",Bataan,2nd District,Municipality C,Roads,150422,SAMPLE
+2023,NEP,DPWH,DPWH-OSEC,"Flood control project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Flood control,272551,SAMPLE
+2023,NEP,DPWH,DPWH-OSEC,"Bridges project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Bridges,128537,SAMPLE
+2023,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Multi-purpose buildings,29992,SAMPLE
+2023,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Multi-purpose buildings,25966,SAMPLE
+2023,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 3, Municipality A (sample)",Bataan,2nd District,Municipality A,Multi-purpose buildings,33738,SAMPLE
+2023,NEP,DEPED,DEPED-OSEC,"School buildings project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,School buildings,52586,SAMPLE
+2023,NEP,DEPED,DEPED-OSEC,"School buildings project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,School buildings,75214,SAMPLE
+2023,NEP,DOH,DOH-OSEC,"Health facilities project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Health facilities,121778,SAMPLE
+2023,NEP,DA,DA-NIA,"Irrigation project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Irrigation,48878,SAMPLE
+2023,NEP,DSWD,DSWD-OSEC,"Social protection project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Social protection,28399,SAMPLE
+2023,NEP,DSWD,DSWD-OSEC,"Social protection project 2, Municipality B (sample)",Bataan,2nd District,Municipality B,Social protection,20647,SAMPLE
+2023,GAA,DPWH,DPWH-OSEC,"Roads project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Roads,294434,SAMPLE
+2023,GAA,DPWH,DPWH-OSEC,"Flood control project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Flood control,94099,SAMPLE
+2023,GAA,DPWH,DPWH-OSEC,"Flood control project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,Flood control,100133,SAMPLE
+2023,GAA,DPWH,DPWH-OSEC,"Flood control project 3, Municipality C (sample)",Bataan,2nd District,Municipality C,Flood control,104623,SAMPLE
+2023,GAA,DPWH,DPWH-OSEC,"Bridges project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Bridges,104663,SAMPLE
+2023,GAA,DPWH,DPWH-OSEC,"Multi-purpose buildings project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Multi-purpose buildings,39196,SAMPLE
+2023,GAA,DPWH,DPWH-OSEC,"Multi-purpose buildings project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Multi-purpose buildings,40407,SAMPLE
+2023,GAA,DEPED,DEPED-OSEC,"School buildings project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,School buildings,65806,SAMPLE
+2023,GAA,DEPED,DEPED-OSEC,"School buildings project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,School buildings,56282,SAMPLE
+2023,GAA,DOH,DOH-OSEC,"Health facilities project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Health facilities,117593,SAMPLE
+2023,GAA,DA,DA-NIA,"Irrigation project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Irrigation,20739,SAMPLE
+2023,GAA,DA,DA-NIA,"Irrigation project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,Irrigation,23138,SAMPLE
+2023,GAA,DA,DA-NIA,"Irrigation project 3, Municipality B (sample)",Bataan,2nd District,Municipality B,Irrigation,22110,SAMPLE
+2023,GAA,DSWD,DSWD-OSEC,"Social protection project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Social protection,24896,SAMPLE
+2023,GAA,DSWD,DSWD-OSEC,"Social protection project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Social protection,34953,SAMPLE
+2024,NEP,DPWH,DPWH-OSEC,"Roads project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Roads,257294,SAMPLE
+2024,NEP,DPWH,DPWH-OSEC,"Roads project 2, Municipality B (sample)",Bataan,2nd District,Municipality B,Roads,239177,SAMPLE
+2024,NEP,DPWH,DPWH-OSEC,"Flood control project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Flood control,294087,SAMPLE
+2024,NEP,DPWH,DPWH-OSEC,"Bridges project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Bridges,170344,SAMPLE
+2024,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Multi-purpose buildings,63364,SAMPLE
+2024,NEP,DEPED,DEPED-OSEC,"School buildings project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,School buildings,46523,SAMPLE
+2024,NEP,DEPED,DEPED-OSEC,"School buildings project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,School buildings,36240,SAMPLE
+2024,NEP,DEPED,DEPED-OSEC,"School buildings project 3, Municipality A (sample)",Bataan,2nd District,Municipality A,School buildings,58647,SAMPLE
+2024,NEP,DOH,DOH-OSEC,"Health facilities project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Health facilities,26210,SAMPLE
+2024,NEP,DOH,DOH-OSEC,"Health facilities project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Health facilities,42026,SAMPLE
+2024,NEP,DOH,DOH-OSEC,"Health facilities project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Health facilities,41065,SAMPLE
+2024,NEP,DA,DA-NIA,"Irrigation project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Irrigation,58452,SAMPLE
+2024,NEP,DSWD,DSWD-OSEC,"Social protection project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Social protection,23400,SAMPLE
+2024,NEP,DSWD,DSWD-OSEC,"Social protection project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,Social protection,24739,SAMPLE
+2024,GAA,DPWH,DPWH-OSEC,"Roads project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Roads,395801,SAMPLE
+2024,GAA,DPWH,DPWH-OSEC,"Flood control project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Flood control,111328,SAMPLE
+2024,GAA,DPWH,DPWH-OSEC,"Flood control project 2, Municipality B (sample)",Bataan,2nd District,Municipality B,Flood control,147160,SAMPLE
+2024,GAA,DPWH,DPWH-OSEC,"Flood control project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Flood control,110102,SAMPLE
+2024,GAA,DPWH,DPWH-OSEC,"Bridges project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Bridges,37766,SAMPLE
+2024,GAA,DPWH,DPWH-OSEC,"Bridges project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,Bridges,48005,SAMPLE
+2024,GAA,DPWH,DPWH-OSEC,"Bridges project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Bridges,39747,SAMPLE
+2024,GAA,DPWH,DPWH-OSEC,"Multi-purpose buildings project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Multi-purpose buildings,114980,SAMPLE
+2024,GAA,DEPED,DEPED-OSEC,"School buildings project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,School buildings,154342,SAMPLE
+2024,GAA,DOH,DOH-OSEC,"Health facilities project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Health facilities,30016,SAMPLE
+2024,GAA,DOH,DOH-OSEC,"Health facilities project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Health facilities,31651,SAMPLE
+2024,GAA,DOH,DOH-OSEC,"Health facilities project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Health facilities,30347,SAMPLE
+2024,GAA,DA,DA-NIA,"Irrigation project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Irrigation,30664,SAMPLE
+2024,GAA,DA,DA-NIA,"Irrigation project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Irrigation,39916,SAMPLE
+2024,GAA,DSWD,DSWD-OSEC,"Social protection project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Social protection,23231,SAMPLE
+2024,GAA,DSWD,DSWD-OSEC,"Social protection project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Social protection,18681,SAMPLE
+2024,GAA,DSWD,DSWD-OSEC,"Social protection project 3, Municipality A (sample)",Bataan,2nd District,Municipality A,Social protection,16273,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Roads project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Roads,167480,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Roads project 2, Municipality B (sample)",Bataan,2nd District,Municipality B,Roads,111562,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Roads project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Roads,153880,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Flood control project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Flood control,366042,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Bridges project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Bridges,74073,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Bridges project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Bridges,52192,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Bridges project 3, Municipality B (sample)",Bataan,2nd District,Municipality B,Bridges,44045,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Multi-purpose buildings,39640,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Multi-purpose buildings,40462,SAMPLE
+2025,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 3, Municipality B (sample)",Bataan,2nd District,Municipality B,Multi-purpose buildings,25568,SAMPLE
+2025,NEP,DEPED,DEPED-OSEC,"School buildings project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,School buildings,148982,SAMPLE
+2025,NEP,DOH,DOH-OSEC,"Health facilities project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Health facilities,46150,SAMPLE
+2025,NEP,DOH,DOH-OSEC,"Health facilities project 2, Municipality B (sample)",Bataan,2nd District,Municipality B,Health facilities,43405,SAMPLE
+2025,NEP,DA,DA-NIA,"Irrigation project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Irrigation,23401,SAMPLE
+2025,NEP,DA,DA-NIA,"Irrigation project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Irrigation,24977,SAMPLE
+2025,NEP,DA,DA-NIA,"Irrigation project 3, Municipality C (sample)",Bataan,2nd District,Municipality C,Irrigation,30418,SAMPLE
+2025,NEP,DSWD,DSWD-OSEC,"Social protection project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Social protection,75384,SAMPLE
+2025,GAA,DPWH,DPWH-OSEC,"Roads project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Roads,569498,SAMPLE
+2025,GAA,DPWH,DPWH-OSEC,"Flood control project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Flood control,405504,SAMPLE
+2025,GAA,DPWH,DPWH-OSEC,"Bridges project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Bridges,70285,SAMPLE
+2025,GAA,DPWH,DPWH-OSEC,"Bridges project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,Bridges,46103,SAMPLE
+2025,GAA,DPWH,DPWH-OSEC,"Bridges project 3, Municipality B (sample)",Bataan,2nd District,Municipality B,Bridges,53987,SAMPLE
+2025,GAA,DPWH,DPWH-OSEC,"Multi-purpose buildings project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Multi-purpose buildings,41183,SAMPLE
+2025,GAA,DPWH,DPWH-OSEC,"Multi-purpose buildings project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Multi-purpose buildings,35386,SAMPLE
+2025,GAA,DPWH,DPWH-OSEC,"Multi-purpose buildings project 3, Municipality A (sample)",Bataan,2nd District,Municipality A,Multi-purpose buildings,34708,SAMPLE
+2025,GAA,DEPED,DEPED-OSEC,"School buildings project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,School buildings,43346,SAMPLE
+2025,GAA,DEPED,DEPED-OSEC,"School buildings project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,School buildings,41463,SAMPLE
+2025,GAA,DEPED,DEPED-OSEC,"School buildings project 3, Municipality C (sample)",Bataan,2nd District,Municipality C,School buildings,52140,SAMPLE
+2025,GAA,DOH,DOH-OSEC,"Health facilities project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Health facilities,41066,SAMPLE
+2025,GAA,DOH,DOH-OSEC,"Health facilities project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Health facilities,32994,SAMPLE
+2025,GAA,DOH,DOH-OSEC,"Health facilities project 3, Municipality B (sample)",Bataan,2nd District,Municipality B,Health facilities,38218,SAMPLE
+2025,GAA,DA,DA-NIA,"Irrigation project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Irrigation,18219,SAMPLE
+2025,GAA,DA,DA-NIA,"Irrigation project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,Irrigation,29521,SAMPLE
+2025,GAA,DA,DA-NIA,"Irrigation project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Irrigation,27903,SAMPLE
+2025,GAA,DSWD,DSWD-OSEC,"Social protection project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Social protection,63020,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Roads project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Roads,150730,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Roads project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,Roads,123270,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Roads project 3, Municipality A (sample)",Bataan,2nd District,Municipality A,Roads,179857,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Flood control project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Flood control,166541,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Flood control project 2, Municipality B (sample)",Bataan,2nd District,Municipality B,Flood control,118992,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Flood control project 3, Municipality B (sample)",Bataan,2nd District,Municipality B,Flood control,107366,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Bridges project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Bridges,57163,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Bridges project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Bridges,52350,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Bridges project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Bridges,65259,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Multi-purpose buildings,42925,SAMPLE
+2026,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 2, Municipality B (sample)",Bataan,2nd District,Municipality B,Multi-purpose buildings,45899,SAMPLE
+2026,NEP,DEPED,DEPED-OSEC,"School buildings project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,School buildings,184247,SAMPLE
+2026,NEP,DOH,DOH-OSEC,"Health facilities project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Health facilities,110827,SAMPLE
+2026,NEP,DA,DA-NIA,"Irrigation project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Irrigation,31943,SAMPLE
+2026,NEP,DA,DA-NIA,"Irrigation project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Irrigation,24561,SAMPLE
+2026,NEP,DA,DA-NIA,"Irrigation project 3, Municipality C (sample)",Bataan,2nd District,Municipality C,Irrigation,30775,SAMPLE
+2026,NEP,DSWD,DSWD-OSEC,"Social protection project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Social protection,16869,SAMPLE
+2026,NEP,DSWD,DSWD-OSEC,"Social protection project 2, Municipality B (sample)",Bataan,2nd District,Municipality B,Social protection,29272,SAMPLE
+2026,NEP,DSWD,DSWD-OSEC,"Social protection project 3, Municipality A (sample)",Bataan,2nd District,Municipality A,Social protection,27247,SAMPLE
+2026,GAA,DPWH,DPWH-OSEC,"Roads project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Roads,550449,SAMPLE
+2026,GAA,DPWH,DPWH-OSEC,"Flood control project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Flood control,171506,SAMPLE
+2026,GAA,DPWH,DPWH-OSEC,"Flood control project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Flood control,174615,SAMPLE
+2026,GAA,DPWH,DPWH-OSEC,"Flood control project 3, Municipality C (sample)",Bataan,2nd District,Municipality C,Flood control,155673,SAMPLE
+2026,GAA,DPWH,DPWH-OSEC,"Bridges project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Bridges,56816,SAMPLE
+2026,GAA,DPWH,DPWH-OSEC,"Bridges project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Bridges,68174,SAMPLE
+2026,GAA,DPWH,DPWH-OSEC,"Bridges project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Bridges,79397,SAMPLE
+2026,GAA,DPWH,DPWH-OSEC,"Multi-purpose buildings project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Multi-purpose buildings,134716,SAMPLE
+2026,GAA,DEPED,DEPED-OSEC,"School buildings project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,School buildings,147931,SAMPLE
+2026,GAA,DOH,DOH-OSEC,"Health facilities project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Health facilities,163849,SAMPLE
+2026,GAA,DA,DA-NIA,"Irrigation project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Irrigation,26531,SAMPLE
+2026,GAA,DA,DA-NIA,"Irrigation project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Irrigation,21682,SAMPLE
+2026,GAA,DA,DA-NIA,"Irrigation project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Irrigation,30461,SAMPLE
+2026,GAA,DSWD,DSWD-OSEC,"Social protection project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Social protection,25911,SAMPLE
+2026,GAA,DSWD,DSWD-OSEC,"Social protection project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,Social protection,25923,SAMPLE
+2026,GAA,DSWD,DSWD-OSEC,"Social protection project 3, Municipality D (sample)",Bataan,2nd District,Municipality D,Social protection,28049,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Roads project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,Roads,198649,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Roads project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Roads,266336,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Flood control project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Flood control,121514,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Flood control project 2, Municipality B (sample)",Bataan,2nd District,Municipality B,Flood control,120732,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Flood control project 3, Municipality C (sample)",Bataan,2nd District,Municipality C,Flood control,176525,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Bridges project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Bridges,77077,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Bridges project 2, Municipality C (sample)",Bataan,2nd District,Municipality C,Bridges,55595,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Bridges project 3, Municipality A (sample)",Bataan,2nd District,Municipality A,Bridges,51271,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Multi-purpose buildings,47490,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 2, Municipality D (sample)",Bataan,2nd District,Municipality D,Multi-purpose buildings,46782,SAMPLE
+2027,NEP,DPWH,DPWH-OSEC,"Multi-purpose buildings project 3, Municipality A (sample)",Bataan,2nd District,Municipality A,Multi-purpose buildings,31282,SAMPLE
+2027,NEP,DEPED,DEPED-OSEC,"School buildings project 1, Municipality A (sample)",Bataan,2nd District,Municipality A,School buildings,209274,SAMPLE
+2027,NEP,DOH,DOH-OSEC,"Health facilities project 1, Municipality D (sample)",Bataan,2nd District,Municipality D,Health facilities,163686,SAMPLE
+2027,NEP,DA,DA-NIA,"Irrigation project 1, Municipality C (sample)",Bataan,2nd District,Municipality C,Irrigation,34215,SAMPLE
+2027,NEP,DA,DA-NIA,"Irrigation project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Irrigation,24009,SAMPLE
+2027,NEP,DA,DA-NIA,"Irrigation project 3, Municipality B (sample)",Bataan,2nd District,Municipality B,Irrigation,31232,SAMPLE
+2027,NEP,DSWD,DSWD-OSEC,"Social protection project 1, Municipality B (sample)",Bataan,2nd District,Municipality B,Social protection,35139,SAMPLE
+2027,NEP,DSWD,DSWD-OSEC,"Social protection project 2, Municipality A (sample)",Bataan,2nd District,Municipality A,Social protection,39826,SAMPLE

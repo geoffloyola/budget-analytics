@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navy and gold, the colours of the House. Every text/background pair used is
+   ≥ 4.5:1. Chart series colours (--s1…--s5, --up/--down) are the validated
+   data-viz palette: fixed order, CVD-checked in both modes. */
+:root {
+  color-scheme: light;
+  --page: #f5f7fc;
+  --surface: #ffffff;
+  --surface-2: #eef1f8;
+  --ink: #0b1226;
+  --ink-2: #44506b;
+  --muted: #646f89;
+  --border: rgba(11, 24, 64, 0.12);
+  --accent: #1a3fc7;
+  --on-accent: #ffffff;
+  --brand: #0a1f66; /* navy top bar */
+  --brand-2: #06154a;
+  --on-brand: #ffffff;
+  --on-brand-2: #c7d0ec;
+  --gold: #e2c340;
+  --good: #0f8a3c;
+  --warn: #b7791f;
+  --critical: #c0262d;
+  --chart: #1f45d6;
+  --grid: rgba(11, 24, 64, 0.08);
+  --shadow: 0 1px 2px rgba(11, 24, 64, 0.05), 0 1px 1px rgba(11, 24, 64, 0.03);
+  --shadow-lg: 0 10px 28px -10px rgba(10, 31, 102, 0.22), 0 2px 4px rgba(11, 24, 64, 0.05);
+  --s1: #2a78d6;
+  --s2: #eb6834;
+  --s3: #1baf7a;
+  --s4: #eda100;
+  --s5: #e87ba4;
+  --up: #2a78d6;
+  --down: #e34948;
+  --neutral: #f0efec;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #070b18;
+    --surface: #0f1629;
+    --surface-2: #182139;
+    --ink: #eef2ff;
+    --ink-2: #b4bdd6;
+    --muted: #8490ad;
+    --border: rgba(199, 208, 236, 0.12);
+    --accent: #8aa4ff;
+    --on-accent: #070b18;
+    --brand: #081645;
+    --brand-2: #050e30;
+    --on-brand: #ffffff;
+    --on-brand-2: #b4bdd6;
+    --gold: #f0cf55;
+    --good: #2fb36a;
+    --warn: #dba227;
+    --critical: #ef6a6f;
+    --chart: #5f7fef;
+    --grid: rgba(199, 208, 236, 0.09);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+    --shadow-lg: 0 10px 28px -10px rgba(0, 0, 0, 0.7);
+    --s1: #3987e5;
+    --s2: #d95926;
+    --s3: #199e70;
+    --s4: #c98500;
+    --s5: #d55181;
+    --up: #3987e5;
+    --down: #e66767;
+    --neutral: #383835;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #070b18;
+  --surface: #0f1629;
+  --surface-2: #182139;
+  --ink: #eef2ff;
+  --ink-2: #b4bdd6;
+  --muted: #8490ad;
+  --border: rgba(199, 208, 236, 0.12);
+  --accent: #8aa4ff;
+  --on-accent: #070b18;
+  --brand: #081645;
+  --brand-2: #050e30;
+  --on-brand: #ffffff;
+  --on-brand-2: #b4bdd6;
+  --gold: #f0cf55;
+  --good: #2fb36a;
+  --warn: #dba227;
+  --critical: #ef6a6f;
+  --chart: #5f7fef;
+  --grid: rgba(199, 208, 236, 0.09);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 10px 28px -10px rgba(0, 0, 0, 0.7);
+  --s1: #3987e5;
+  --s2: #d95926;
+  --s3: #199e70;
+  --s4: #c98500;
+  --s5: #d55181;
+  --up: #3987e5;
+  --down: #e66767;
+  --neutral: #383835;
+}
+
+html,
+body {
+  background: var(--page);
+  color: var(--ink);
+}
+
+body {
+  margin: 0;
+}
+
+@layer components {
+  .input {
+    @apply w-full rounded-lg border px-3 py-2 text-sm outline-none transition-colors;
+    background: var(--surface);
+    border-color: var(--border);
+    color: var(--ink);
+  }
+  .input:hover {
+    border-color: color-mix(in srgb, var(--ink) 22%, transparent);
+  }
+  .input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 18%, transparent);
+  }
+
+  .card {
+    @apply rounded-xl border border-border bg-surface;
+    box-shadow: var(--shadow);
+  }
+
+  .eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.09em] text-accent;
+  }
+
+  .section-title {
+    @apply text-[13px] font-semibold text-ink;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-1.5 rounded-lg px-3.5 py-2 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-primary {
+    @apply btn bg-accent text-onaccent hover:brightness-110;
+  }
+  .btn-secondary {
+    @apply btn border border-border bg-surface text-ink hover:bg-surface2;
+  }
+  .btn-ghost {
+    @apply btn text-ink2 hover:bg-surface2 hover:text-ink;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[11px] font-semibold;
+  }
+}
+
+/* Visible keyboard focus everywhere, without a ring on mouse click. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.input:focus-visible {
+  outline: none;
+}
+
+@media print {
+  :root {
+    --page: #ffffff;
+    --surface: #ffffff;
+    --shadow: none;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

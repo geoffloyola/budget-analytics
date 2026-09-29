@@ -1,0 +1,1063 @@
+fiscal_year,stage,department_code,department_name,sector,agency_code,agency_name,expense_class,amount_thousands,source
+2023,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,PS,463271609,SAMPLE
+2023,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,MOOE,115817902,SAMPLE
+2023,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,CO,64343279,SAMPLE
+2023,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,PS,14327988,SAMPLE
+2023,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,MOOE,3581997,SAMPLE
+2023,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,CO,1989998,SAMPLE
+2023,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,PS,464508280,SAMPLE
+2023,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,MOOE,116127070,SAMPLE
+2023,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,CO,64515039,SAMPLE
+2023,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,PS,14366235,SAMPLE
+2023,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,MOOE,3591559,SAMPLE
+2023,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,CO,1995310,SAMPLE
+2024,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,PS,503233192,SAMPLE
+2024,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,MOOE,125808298,SAMPLE
+2024,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,CO,69893499,SAMPLE
+2024,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,PS,15563913,SAMPLE
+2024,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,MOOE,3890978,SAMPLE
+2024,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,CO,2161655,SAMPLE
+2024,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,PS,553186794,SAMPLE
+2024,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,MOOE,138296698,SAMPLE
+2024,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,CO,76831499,SAMPLE
+2024,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,PS,17108870,SAMPLE
+2024,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,MOOE,4277217,SAMPLE
+2024,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,CO,2376232,SAMPLE
+2025,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,PS,535476951,SAMPLE
+2025,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,MOOE,133869238,SAMPLE
+2025,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,CO,74371799,SAMPLE
+2025,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,PS,16561143,SAMPLE
+2025,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,MOOE,4140286,SAMPLE
+2025,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,CO,2300159,SAMPLE
+2025,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,PS,477785053,SAMPLE
+2025,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,MOOE,119446263,SAMPLE
+2025,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,CO,66359035,SAMPLE
+2025,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,PS,14776857,SAMPLE
+2025,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,MOOE,3694214,SAMPLE
+2025,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,CO,2052341,SAMPLE
+2026,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,PS,580093098,SAMPLE
+2026,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,MOOE,145023275,SAMPLE
+2026,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,CO,80568486,SAMPLE
+2026,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,PS,17941024,SAMPLE
+2026,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,MOOE,4485256,SAMPLE
+2026,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,CO,2491809,SAMPLE
+2026,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,PS,608931028,SAMPLE
+2026,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,MOOE,152232757,SAMPLE
+2026,GAA,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,CO,84573754,SAMPLE
+2026,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,PS,18832918,SAMPLE
+2026,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,MOOE,4708230,SAMPLE
+2026,GAA,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,CO,2615683,SAMPLE
+2027,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,PS,601301747,SAMPLE
+2027,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,MOOE,150325437,SAMPLE
+2027,NEP,DEPED,Department of Education,social,DEPED-OSEC,Office of the Secretary,CO,83514132,SAMPLE
+2027,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,PS,18596961,SAMPLE
+2027,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,MOOE,4649240,SAMPLE
+2027,NEP,DEPED,Department of Education,social,DEPED-ATT,Attached agencies,CO,2582911,SAMPLE
+2023,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,PS,27245210,SAMPLE
+2023,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,MOOE,36326947,SAMPLE
+2023,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,CO,844601522,SAMPLE
+2023,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,PS,25011514,SAMPLE
+2023,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,MOOE,33348685,SAMPLE
+2023,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,CO,775356937,SAMPLE
+2024,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,PS,29963189,SAMPLE
+2024,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,MOOE,39950919,SAMPLE
+2024,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,CO,928858868,SAMPLE
+2024,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,PS,31837455,SAMPLE
+2024,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,MOOE,42449940,SAMPLE
+2024,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,CO,986961101,SAMPLE
+2025,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,PS,31991750,SAMPLE
+2025,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,MOOE,42655666,SAMPLE
+2025,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,CO,991744242,SAMPLE
+2025,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,PS,33871216,SAMPLE
+2025,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,MOOE,45161621,SAMPLE
+2025,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,CO,1050007691,SAMPLE
+2026,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,PS,35515620,SAMPLE
+2026,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,MOOE,47354160,SAMPLE
+2026,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,CO,1100984222,SAMPLE
+2026,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,PS,31347301,SAMPLE
+2026,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,MOOE,41796402,SAMPLE
+2026,GAA,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,CO,971766339,SAMPLE
+2027,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,PS,37731821,SAMPLE
+2027,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,MOOE,50309095,SAMPLE
+2027,NEP,DPWH,Department of Public Works and Highways,economic,DPWH-OSEC,Office of the Secretary,CO,1169686465,SAMPLE
+2023,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,PS,67035244,SAMPLE
+2023,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,MOOE,86188171,SAMPLE
+2023,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,CO,38305854,SAMPLE
+2023,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),PS,16758811,SAMPLE
+2023,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),MOOE,21547043,SAMPLE
+2023,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),CO,9576463,SAMPLE
+2023,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,PS,73560213,SAMPLE
+2023,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,MOOE,94577417,SAMPLE
+2023,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,CO,42034408,SAMPLE
+2023,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),PS,18390053,SAMPLE
+2023,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),MOOE,23644354,SAMPLE
+2023,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),CO,10508602,SAMPLE
+2024,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,PS,72045952,SAMPLE
+2024,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,MOOE,92630510,SAMPLE
+2024,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,CO,41169115,SAMPLE
+2024,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),PS,18011488,SAMPLE
+2024,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),MOOE,23157627,SAMPLE
+2024,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),CO,10292279,SAMPLE
+2024,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,PS,75259257,SAMPLE
+2024,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,MOOE,96761902,SAMPLE
+2024,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,CO,43005290,SAMPLE
+2024,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),PS,18814814,SAMPLE
+2024,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),MOOE,24190475,SAMPLE
+2024,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),CO,10751322,SAMPLE
+2025,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,PS,77438833,SAMPLE
+2025,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,MOOE,99564213,SAMPLE
+2025,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,CO,44250761,SAMPLE
+2025,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),PS,19359708,SAMPLE
+2025,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),MOOE,24891053,SAMPLE
+2025,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),CO,11062690,SAMPLE
+2025,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,PS,72335612,SAMPLE
+2025,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,MOOE,93002930,SAMPLE
+2025,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,CO,41334635,SAMPLE
+2025,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),PS,18083903,SAMPLE
+2025,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),MOOE,23250732,SAMPLE
+2025,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),CO,10333659,SAMPLE
+2026,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,PS,84192076,SAMPLE
+2026,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,MOOE,108246955,SAMPLE
+2026,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,CO,48109758,SAMPLE
+2026,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),PS,21048019,SAMPLE
+2026,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),MOOE,27061739,SAMPLE
+2026,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),CO,12027439,SAMPLE
+2026,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,PS,83864952,SAMPLE
+2026,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,MOOE,107826367,SAMPLE
+2026,GAA,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,CO,47922830,SAMPLE
+2026,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),PS,20966238,SAMPLE
+2026,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),MOOE,26956592,SAMPLE
+2026,GAA,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),CO,11980707,SAMPLE
+2027,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,PS,85436200,SAMPLE
+2027,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,MOOE,109846543,SAMPLE
+2027,NEP,DOH,Department of Health,social,DOH-OSEC,Office of the Secretary,CO,48820686,SAMPLE
+2027,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),PS,21359050,SAMPLE
+2027,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),MOOE,27461636,SAMPLE
+2027,NEP,DOH,Department of Health,social,DOH-PHIC,Philippine Health Insurance Corporation (subsidy),CO,12205171,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,PS,125300898,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,MOOE,31325224,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,CO,17402902,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,PS,16064218,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,MOOE,4016054,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,CO,2231141,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,PS,12851374,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,MOOE,3212844,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,CO,1784913,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,PS,6425687,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,MOOE,1606422,SAMPLE
+2023,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,CO,892457,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,PS,126522624,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,MOOE,31630656,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,CO,17572587,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,PS,16220849,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,MOOE,4055212,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,CO,2252896,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,PS,12976679,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,MOOE,3244170,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,CO,1802317,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,PS,6488340,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,MOOE,1622085,SAMPLE
+2023,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,CO,901158,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,PS,139725820,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,MOOE,34931455,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,CO,19406364,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,PS,17913567,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,MOOE,4478392,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,CO,2487995,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,PS,14330853,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,MOOE,3582713,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,CO,1990396,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,PS,7165427,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,MOOE,1791357,SAMPLE
+2024,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,CO,995198,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,PS,136241578,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,MOOE,34060394,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,CO,18922441,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,PS,17466869,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,MOOE,4366717,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,CO,2425954,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,PS,13973495,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,MOOE,3493374,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,CO,1940763,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,PS,6986748,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,MOOE,1746687,SAMPLE
+2024,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,CO,970382,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,PS,160022557,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,MOOE,40005639,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,CO,22225355,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,PS,20515712,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,MOOE,5128928,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,CO,2849405,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,PS,16412570,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,MOOE,4103142,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,CO,2279524,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,PS,8206285,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,MOOE,2051571,SAMPLE
+2025,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,CO,1139762,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,PS,158723445,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,MOOE,39680861,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,CO,22044923,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,PS,20349160,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,MOOE,5087290,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,CO,2826272,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,PS,16279328,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,MOOE,4069832,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,CO,2261018,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,PS,8139664,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,MOOE,2034916,SAMPLE
+2025,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,CO,1130509,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,PS,171789168,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,MOOE,42947292,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,CO,23859607,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,PS,22024252,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,MOOE,5506063,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,CO,3058924,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,PS,17619402,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,MOOE,4404850,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,CO,2447139,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,PS,8809701,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,MOOE,2202425,SAMPLE
+2026,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,CO,1223570,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,PS,154172223,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,MOOE,38543056,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,CO,21412809,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,PS,19765670,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,MOOE,4941417,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,CO,2745232,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,PS,15812536,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,MOOE,3953134,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,CO,2196186,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,PS,7906268,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,MOOE,1976567,SAMPLE
+2026,GAA,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,CO,1098093,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,PS,195061100,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,MOOE,48765275,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-PNP,Philippine National Police,CO,27091819,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,PS,25007833,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,MOOE,6251958,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BFP,Bureau of Fire Protection,CO,3473310,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,PS,20006267,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,MOOE,5001567,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-BJMP,Bureau of Jail Management and Penology,CO,2778648,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,PS,10003133,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,MOOE,2500783,SAMPLE
+2027,NEP,DILG,Department of the Interior and Local Government,general_public,DILG-OSEC,Office of the Secretary,CO,1389324,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,PS,58076830,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,MOOE,19358943,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,CO,19358943,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,PS,25811924,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,MOOE,8603975,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,CO,8603975,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,PS,25811924,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,MOOE,8603975,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,CO,8603975,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,PS,19358943,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,MOOE,6452981,SAMPLE
+2023,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,CO,6452981,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,PS,60398647,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,MOOE,20132882,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,CO,20132882,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,PS,26843843,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,MOOE,8947948,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,CO,8947948,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,PS,26843843,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,MOOE,8947948,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,CO,8947948,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,PS,20132882,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,MOOE,6710961,SAMPLE
+2023,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,CO,6710961,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,PS,64906709,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,MOOE,21635570,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,CO,21635570,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,PS,28847426,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,MOOE,9615809,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,CO,9615809,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,PS,28847426,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,MOOE,9615809,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,CO,9615809,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,PS,21635570,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,MOOE,7211857,SAMPLE
+2024,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,CO,7211857,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,PS,68655834,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,MOOE,22885278,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,CO,22885278,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,PS,30513704,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,MOOE,10171235,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,CO,10171235,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,PS,30513704,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,MOOE,10171235,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,CO,10171235,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,PS,22885278,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,MOOE,7628426,SAMPLE
+2024,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,CO,7628426,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,PS,70813363,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,MOOE,23604454,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,CO,23604454,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,PS,31472606,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,MOOE,10490869,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,CO,10490869,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,PS,31472606,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,MOOE,10490869,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,CO,10490869,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,PS,23604454,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,MOOE,7868151,SAMPLE
+2025,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,CO,7868151,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,PS,62594955,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,MOOE,20864985,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,CO,20864985,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,PS,27819980,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,MOOE,9273327,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,CO,9273327,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,PS,27819980,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,MOOE,9273327,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,CO,9273327,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,PS,20864985,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,MOOE,6954995,SAMPLE
+2025,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,CO,6954995,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,PS,77679750,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,MOOE,25893250,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,CO,25893250,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,PS,34524333,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,MOOE,11508111,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,CO,11508111,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,PS,34524333,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,MOOE,11508111,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,CO,11508111,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,PS,25893250,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,MOOE,8631083,SAMPLE
+2026,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,CO,8631083,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,PS,81390716,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,MOOE,27130239,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-PA,Philippine Army,CO,27130239,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,PS,36173652,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,MOOE,12057884,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-PN,Philippine Navy,CO,12057884,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,PS,36173652,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,MOOE,12057884,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,CO,12057884,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,PS,27130239,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,MOOE,9043413,SAMPLE
+2026,GAA,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,CO,9043413,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,PS,83166929,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,MOOE,27722310,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-PA,Philippine Army,CO,27722310,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,PS,36963080,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,MOOE,12321027,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-PN,Philippine Navy,CO,12321027,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,PS,36963080,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,MOOE,12321027,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-PAF,Philippine Air Force,CO,12321027,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,PS,27722310,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,MOOE,9240770,SAMPLE
+2027,NEP,DND,Department of National Defense,defense,DND-GHQ,General Headquarters & others,CO,9240770,SAMPLE
+2023,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),PS,9394502,SAMPLE
+2023,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),MOOE,174737736,SAMPLE
+2023,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),CO,3757801,SAMPLE
+2023,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),PS,9098463,SAMPLE
+2023,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),MOOE,169231407,SAMPLE
+2023,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),CO,3639385,SAMPLE
+2024,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),PS,10739324,SAMPLE
+2024,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),MOOE,199751425,SAMPLE
+2024,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),CO,4295730,SAMPLE
+2024,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),PS,9916242,SAMPLE
+2024,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),MOOE,184442093,SAMPLE
+2024,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),CO,3966497,SAMPLE
+2025,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),PS,11100891,SAMPLE
+2025,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),MOOE,206476565,SAMPLE
+2025,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),CO,4440356,SAMPLE
+2025,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),PS,11697495,SAMPLE
+2025,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),MOOE,217573416,SAMPLE
+2025,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),CO,4678998,SAMPLE
+2026,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),PS,12056282,SAMPLE
+2026,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),MOOE,224246847,SAMPLE
+2026,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),CO,4822513,SAMPLE
+2026,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),PS,12478839,SAMPLE
+2026,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),MOOE,232106410,SAMPLE
+2026,GAA,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),CO,4991536,SAMPLE
+2027,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),PS,12986081,SAMPLE
+2027,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),MOOE,241541100,SAMPLE
+2027,NEP,DSWD,Department of Social Welfare and Development,social,DSWD-OSEC,Office of the Secretary (incl. 4Ps),CO,5194432,SAMPLE
+2023,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",PS,3157512,SAMPLE
+2023,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",MOOE,4210016,SAMPLE
+2023,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",CO,97882876,SAMPLE
+2023,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",PS,2922473,SAMPLE
+2023,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",MOOE,3896631,SAMPLE
+2023,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",CO,90596669,SAMPLE
+2024,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",PS,3420945,SAMPLE
+2024,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",MOOE,4561260,SAMPLE
+2024,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",CO,106049292,SAMPLE
+2024,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",PS,3356746,SAMPLE
+2024,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",MOOE,4475661,SAMPLE
+2024,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",CO,104059111,SAMPLE
+2025,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",PS,3815859,SAMPLE
+2025,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",MOOE,5087812,SAMPLE
+2025,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",CO,118291617,SAMPLE
+2025,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",PS,3594540,SAMPLE
+2025,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",MOOE,4792720,SAMPLE
+2025,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",CO,111430739,SAMPLE
+2026,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",PS,4017834,SAMPLE
+2026,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",MOOE,5357113,SAMPLE
+2026,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",CO,124552868,SAMPLE
+2026,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",PS,3611289,SAMPLE
+2026,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",MOOE,4815052,SAMPLE
+2026,GAA,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",CO,111949967,SAMPLE
+2027,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",PS,4121453,SAMPLE
+2027,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",MOOE,5495271,SAMPLE
+2027,NEP,DOTR,Department of Transportation,economic,DOTR-OSEC,"Office of the Secretary (rail, aviation)",CO,127765052,SAMPLE
+2023,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,PS,34340062,SAMPLE
+2023,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,MOOE,44151508,SAMPLE
+2023,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,CO,19622893,SAMPLE
+2023,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,PS,14717169,SAMPLE
+2023,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,MOOE,18922075,SAMPLE
+2023,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,CO,8409811,SAMPLE
+2023,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,PS,30756235,SAMPLE
+2023,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,MOOE,39543730,SAMPLE
+2023,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,CO,17574991,SAMPLE
+2023,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,PS,13181243,SAMPLE
+2023,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,MOOE,16947313,SAMPLE
+2023,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,CO,7532139,SAMPLE
+2024,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,PS,40191908,SAMPLE
+2024,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,MOOE,51675310,SAMPLE
+2024,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,CO,22966805,SAMPLE
+2024,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,PS,17225103,SAMPLE
+2024,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,MOOE,22146562,SAMPLE
+2024,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,CO,9842916,SAMPLE
+2024,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,PS,37897704,SAMPLE
+2024,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,MOOE,48725619,SAMPLE
+2024,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,CO,21655831,SAMPLE
+2024,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,PS,16241873,SAMPLE
+2024,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,MOOE,20882408,SAMPLE
+2024,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,CO,9281070,SAMPLE
+2025,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,PS,43573678,SAMPLE
+2025,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,MOOE,56023301,SAMPLE
+2025,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,CO,24899245,SAMPLE
+2025,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,PS,18674434,SAMPLE
+2025,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,MOOE,24009986,SAMPLE
+2025,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,CO,10671105,SAMPLE
+2025,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,PS,42229746,SAMPLE
+2025,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,MOOE,54295387,SAMPLE
+2025,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,CO,24131283,SAMPLE
+2025,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,PS,18098462,SAMPLE
+2025,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,MOOE,23269452,SAMPLE
+2025,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,CO,10341979,SAMPLE
+2026,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,PS,46438563,SAMPLE
+2026,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,MOOE,59706724,SAMPLE
+2026,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,CO,26536322,SAMPLE
+2026,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,PS,19902241,SAMPLE
+2026,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,MOOE,25588596,SAMPLE
+2026,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,CO,11372709,SAMPLE
+2026,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,PS,43524500,SAMPLE
+2026,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,MOOE,55960071,SAMPLE
+2026,GAA,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,CO,24871143,SAMPLE
+2026,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,PS,18653357,SAMPLE
+2026,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,MOOE,23982888,SAMPLE
+2026,GAA,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,CO,10659061,SAMPLE
+2027,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,PS,51085303,SAMPLE
+2027,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,MOOE,65681104,SAMPLE
+2027,NEP,DA,Department of Agriculture,economic,DA-OSEC,Office of the Secretary,CO,29191602,SAMPLE
+2027,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,PS,21893701,SAMPLE
+2027,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,MOOE,28149045,SAMPLE
+2027,NEP,DA,Department of Agriculture,economic,DA-NIA,National Irrigation Administration,CO,12510687,SAMPLE
+2023,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),PS,35940711,SAMPLE
+2023,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),MOOE,46209485,SAMPLE
+2023,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),CO,20537549,SAMPLE
+2023,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),PS,35124590,SAMPLE
+2023,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),MOOE,45160187,SAMPLE
+2023,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),CO,20071194,SAMPLE
+2024,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),PS,41081781,SAMPLE
+2024,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),MOOE,52819433,SAMPLE
+2024,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),CO,23475304,SAMPLE
+2024,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),PS,38482493,SAMPLE
+2024,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),MOOE,49477491,SAMPLE
+2024,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),CO,21989996,SAMPLE
+2025,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),PS,46525208,SAMPLE
+2025,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),MOOE,59818124,SAMPLE
+2025,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),CO,26585833,SAMPLE
+2025,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),PS,44811814,SAMPLE
+2025,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),MOOE,57615189,SAMPLE
+2025,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),CO,25606751,SAMPLE
+2026,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),PS,51188958,SAMPLE
+2026,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),MOOE,65814374,SAMPLE
+2026,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),CO,29250833,SAMPLE
+2026,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),PS,45068858,SAMPLE
+2026,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),MOOE,57945674,SAMPLE
+2026,GAA,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),CO,25753633,SAMPLE
+2027,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),PS,56699148,SAMPLE
+2027,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),MOOE,72898905,SAMPLE
+2027,NEP,SUCS,State Universities and Colleges,social,SUCS-ALL,State Universities and Colleges (all),CO,32399513,SAMPLE
+2023,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",PS,10334674,SAMPLE
+2023,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",MOOE,13287438,SAMPLE
+2023,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",CO,5905528,SAMPLE
+2023,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",PS,9265002,SAMPLE
+2023,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",MOOE,11912145,SAMPLE
+2023,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",CO,5294287,SAMPLE
+2024,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",PS,11225285,SAMPLE
+2024,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",MOOE,14432510,SAMPLE
+2024,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",CO,6414449,SAMPLE
+2024,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",PS,10294392,SAMPLE
+2024,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",MOOE,13235646,SAMPLE
+2024,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",CO,5882509,SAMPLE
+2025,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",PS,12328257,SAMPLE
+2025,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",MOOE,15850616,SAMPLE
+2025,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",CO,7044718,SAMPLE
+2025,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",PS,11683029,SAMPLE
+2025,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",MOOE,15021037,SAMPLE
+2025,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",CO,6676017,SAMPLE
+2026,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",PS,12800075,SAMPLE
+2026,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",MOOE,16457240,SAMPLE
+2026,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",CO,7314329,SAMPLE
+2026,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",PS,13155930,SAMPLE
+2026,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",MOOE,16914768,SAMPLE
+2026,GAA,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",CO,7517675,SAMPLE
+2027,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",PS,13634771,SAMPLE
+2027,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",MOOE,17530419,SAMPLE
+2027,NEP,CHED,Commission on Higher Education,social,CHED-OSEC,"CHED (incl. free tuition, UniFAST)",CO,7791298,SAMPLE
+2023,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,PS,11756336,SAMPLE
+2023,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,MOOE,15115289,SAMPLE
+2023,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,CO,6717906,SAMPLE
+2023,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,PS,2939084,SAMPLE
+2023,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,MOOE,3778822,SAMPLE
+2023,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,CO,1679477,SAMPLE
+2023,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,PS,11369395,SAMPLE
+2023,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,MOOE,14617793,SAMPLE
+2023,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,CO,6496797,SAMPLE
+2023,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,PS,2842349,SAMPLE
+2023,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,MOOE,3654448,SAMPLE
+2023,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,CO,1624199,SAMPLE
+2024,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,PS,12442544,SAMPLE
+2024,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,MOOE,15997557,SAMPLE
+2024,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,CO,7110025,SAMPLE
+2024,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,PS,3110636,SAMPLE
+2024,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,MOOE,3999389,SAMPLE
+2024,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,CO,1777506,SAMPLE
+2024,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,PS,13374446,SAMPLE
+2024,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,MOOE,17195716,SAMPLE
+2024,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,CO,7642540,SAMPLE
+2024,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,PS,3343611,SAMPLE
+2024,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,MOOE,4298929,SAMPLE
+2024,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,CO,1910635,SAMPLE
+2025,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,PS,13290181,SAMPLE
+2025,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,MOOE,17087375,SAMPLE
+2025,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,CO,7594389,SAMPLE
+2025,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,PS,3322545,SAMPLE
+2025,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,MOOE,4271844,SAMPLE
+2025,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,CO,1898597,SAMPLE
+2025,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,PS,14634569,SAMPLE
+2025,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,MOOE,18815874,SAMPLE
+2025,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,CO,8362611,SAMPLE
+2025,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,PS,3658642,SAMPLE
+2025,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,MOOE,4703969,SAMPLE
+2025,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,CO,2090653,SAMPLE
+2026,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,PS,14371259,SAMPLE
+2026,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,MOOE,18477333,SAMPLE
+2026,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,CO,8212148,SAMPLE
+2026,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,PS,3592815,SAMPLE
+2026,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,MOOE,4619333,SAMPLE
+2026,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,CO,2053037,SAMPLE
+2026,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,PS,14407012,SAMPLE
+2026,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,MOOE,18523301,SAMPLE
+2026,GAA,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,CO,8232578,SAMPLE
+2026,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,PS,3601753,SAMPLE
+2026,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,MOOE,4630825,SAMPLE
+2026,GAA,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,CO,2058145,SAMPLE
+2027,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,PS,14688162,SAMPLE
+2027,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,MOOE,18884780,SAMPLE
+2027,NEP,DOLE,Department of Labor and Employment,social,DOLE-OSEC,Office of the Secretary,CO,8393235,SAMPLE
+2027,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,PS,3672040,SAMPLE
+2027,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,MOOE,4721195,SAMPLE
+2027,NEP,DOLE,Department of Labor and Employment,social,DOLE-TESDA,TESDA,CO,2098309,SAMPLE
+2023,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,PS,7669577,SAMPLE
+2023,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,MOOE,9860885,SAMPLE
+2023,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,CO,4382615,SAMPLE
+2023,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,PS,7409749,SAMPLE
+2023,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,MOOE,9526820,SAMPLE
+2023,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,CO,4234142,SAMPLE
+2024,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,PS,8885085,SAMPLE
+2024,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,MOOE,11423680,SAMPLE
+2024,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,CO,5077191,SAMPLE
+2024,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,PS,7908606,SAMPLE
+2024,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,MOOE,10168207,SAMPLE
+2024,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,CO,4519203,SAMPLE
+2025,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,PS,9645882,SAMPLE
+2025,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,MOOE,12401848,SAMPLE
+2025,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,CO,5511932,SAMPLE
+2025,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,PS,10129908,SAMPLE
+2025,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,MOOE,13024167,SAMPLE
+2025,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,CO,5788519,SAMPLE
+2026,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,PS,9975461,SAMPLE
+2026,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,MOOE,12825593,SAMPLE
+2026,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,CO,5700264,SAMPLE
+2026,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,PS,8849158,SAMPLE
+2026,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,MOOE,11377489,SAMPLE
+2026,GAA,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,CO,5056662,SAMPLE
+2027,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,PS,10703702,SAMPLE
+2027,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,MOOE,13761902,SAMPLE
+2027,NEP,DENR,Department of Environment and Natural Resources,economic,DENR-OSEC,Office of the Secretary,CO,6116401,SAMPLE
+2023,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,PS,2676738,SAMPLE
+2023,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,MOOE,3441520,SAMPLE
+2023,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,CO,1529565,SAMPLE
+2023,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,PS,2408955,SAMPLE
+2023,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,MOOE,3097228,SAMPLE
+2023,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,CO,1376546,SAMPLE
+2024,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,PS,3072816,SAMPLE
+2024,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,MOOE,3950763,SAMPLE
+2024,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,CO,1755895,SAMPLE
+2024,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,PS,2728281,SAMPLE
+2024,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,MOOE,3507790,SAMPLE
+2024,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,CO,1559018,SAMPLE
+2025,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,PS,3511536,SAMPLE
+2025,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,MOOE,4514831,SAMPLE
+2025,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,CO,2006592,SAMPLE
+2025,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,PS,3741575,SAMPLE
+2025,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,MOOE,4810597,SAMPLE
+2025,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,CO,2138043,SAMPLE
+2026,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,PS,3962062,SAMPLE
+2026,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,MOOE,5094080,SAMPLE
+2026,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,CO,2264036,SAMPLE
+2026,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,PS,3986255,SAMPLE
+2026,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,MOOE,5125185,SAMPLE
+2026,GAA,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,CO,2277860,SAMPLE
+2027,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,PS,4199819,SAMPLE
+2027,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,MOOE,5399767,SAMPLE
+2027,NEP,DICT,Department of Information and Communications Technology,economic,DICT-OSEC,Office of the Secretary,CO,2399896,SAMPLE
+2023,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,PS,3546365,SAMPLE
+2023,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,MOOE,4559612,SAMPLE
+2023,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,CO,2026494,SAMPLE
+2023,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,PS,3497118,SAMPLE
+2023,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,MOOE,4496294,SAMPLE
+2023,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,CO,1998353,SAMPLE
+2024,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,PS,3935386,SAMPLE
+2024,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,MOOE,5059782,SAMPLE
+2024,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,CO,2248792,SAMPLE
+2024,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,PS,3747898,SAMPLE
+2024,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,MOOE,4818726,SAMPLE
+2024,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,CO,2141656,SAMPLE
+2025,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,PS,4047363,SAMPLE
+2025,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,MOOE,5203752,SAMPLE
+2025,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,CO,2312779,SAMPLE
+2025,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,PS,4293702,SAMPLE
+2025,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,MOOE,5520474,SAMPLE
+2025,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,CO,2453544,SAMPLE
+2026,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,PS,4057682,SAMPLE
+2026,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,MOOE,5217020,SAMPLE
+2026,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,CO,2318676,SAMPLE
+2026,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,PS,3618375,SAMPLE
+2026,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,MOOE,4652197,SAMPLE
+2026,GAA,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,CO,2067643,SAMPLE
+2027,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,PS,4151652,SAMPLE
+2027,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,MOOE,5337839,SAMPLE
+2027,NEP,DTI,Department of Trade and Industry,economic,DTI-OSEC,Office of the Secretary,CO,2372373,SAMPLE
+2023,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,PS,3967950,SAMPLE
+2023,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,MOOE,5101650,SAMPLE
+2023,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,CO,2267400,SAMPLE
+2023,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,PS,1700550,SAMPLE
+2023,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,MOOE,2186421,SAMPLE
+2023,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,CO,971743,SAMPLE
+2023,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,PS,5668500,SAMPLE
+2023,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,MOOE,7288072,SAMPLE
+2023,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,CO,3239143,SAMPLE
+2023,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,PS,3807032,SAMPLE
+2023,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,MOOE,4894755,SAMPLE
+2023,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,CO,2175447,SAMPLE
+2023,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,PS,1631585,SAMPLE
+2023,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,MOOE,2097752,SAMPLE
+2023,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,CO,932334,SAMPLE
+2023,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,PS,5438617,SAMPLE
+2023,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,MOOE,6992507,SAMPLE
+2023,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,CO,3107781,SAMPLE
+2024,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,PS,4786243,SAMPLE
+2024,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,MOOE,6153741,SAMPLE
+2024,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,CO,2734996,SAMPLE
+2024,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,PS,2051247,SAMPLE
+2024,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,MOOE,2637318,SAMPLE
+2024,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,CO,1172141,SAMPLE
+2024,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,PS,6837490,SAMPLE
+2024,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,MOOE,8791059,SAMPLE
+2024,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,CO,3907137,SAMPLE
+2024,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,PS,4919518,SAMPLE
+2024,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,MOOE,6325095,SAMPLE
+2024,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,CO,2811153,SAMPLE
+2024,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,PS,2108365,SAMPLE
+2024,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,MOOE,2710755,SAMPLE
+2024,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,CO,1204780,SAMPLE
+2024,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,PS,7027883,SAMPLE
+2024,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,MOOE,9035850,SAMPLE
+2024,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,CO,4015933,SAMPLE
+2025,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,PS,5307628,SAMPLE
+2025,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,MOOE,6824094,SAMPLE
+2025,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,CO,3032931,SAMPLE
+2025,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,PS,2274698,SAMPLE
+2025,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,MOOE,2924612,SAMPLE
+2025,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,CO,1299827,SAMPLE
+2025,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,PS,7582326,SAMPLE
+2025,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,MOOE,9748705,SAMPLE
+2025,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,CO,4332758,SAMPLE
+2025,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,PS,4731493,SAMPLE
+2025,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,MOOE,6083348,SAMPLE
+2025,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,CO,2703710,SAMPLE
+2025,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,PS,2027783,SAMPLE
+2025,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,MOOE,2607149,SAMPLE
+2025,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,CO,1158733,SAMPLE
+2025,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,PS,6759276,SAMPLE
+2025,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,MOOE,8690497,SAMPLE
+2025,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,CO,3862443,SAMPLE
+2026,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,PS,6168238,SAMPLE
+2026,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,MOOE,7930592,SAMPLE
+2026,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,CO,3524708,SAMPLE
+2026,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,PS,2643531,SAMPLE
+2026,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,MOOE,3398825,SAMPLE
+2026,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,CO,1510589,SAMPLE
+2026,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,PS,8811769,SAMPLE
+2026,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,MOOE,11329418,SAMPLE
+2026,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,CO,5035297,SAMPLE
+2026,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,PS,6659175,SAMPLE
+2026,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,MOOE,8561796,SAMPLE
+2026,GAA,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,CO,3805243,SAMPLE
+2026,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,PS,2853932,SAMPLE
+2026,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,MOOE,3669341,SAMPLE
+2026,GAA,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,CO,1630818,SAMPLE
+2026,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,PS,9513107,SAMPLE
+2026,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,MOOE,12231138,SAMPLE
+2026,GAA,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,CO,5436061,SAMPLE
+2027,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,PS,6554475,SAMPLE
+2027,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,MOOE,8427183,SAMPLE
+2027,NEP,DOF,Department of Finance,general_public,DOF-BIR,Bureau of Internal Revenue,CO,3745415,SAMPLE
+2027,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,PS,2809061,SAMPLE
+2027,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,MOOE,3611650,SAMPLE
+2027,NEP,DOF,Department of Finance,general_public,DOF-BOC,Bureau of Customs,CO,1605178,SAMPLE
+2027,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,PS,9363536,SAMPLE
+2027,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,MOOE,12038832,SAMPLE
+2027,NEP,DOF,Department of Finance,general_public,DOF-OTHERS,Office of the Secretary & others,CO,5350592,SAMPLE
+2023,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,PS,9101790,SAMPLE
+2023,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,MOOE,11702301,SAMPLE
+2023,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,CO,5201023,SAMPLE
+2023,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,PS,9576340,SAMPLE
+2023,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,MOOE,12312437,SAMPLE
+2023,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,CO,5472194,SAMPLE
+2024,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,PS,10591330,SAMPLE
+2024,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,MOOE,13617424,SAMPLE
+2024,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,CO,6052188,SAMPLE
+2024,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,PS,9702187,SAMPLE
+2024,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,MOOE,12474240,SAMPLE
+2024,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,CO,5544107,SAMPLE
+2025,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,PS,11516253,SAMPLE
+2025,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,MOOE,14806611,SAMPLE
+2025,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,CO,6580716,SAMPLE
+2025,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,PS,10189157,SAMPLE
+2025,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,MOOE,13100345,SAMPLE
+2025,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,CO,5822376,SAMPLE
+2026,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,PS,12866249,SAMPLE
+2026,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,MOOE,16542320,SAMPLE
+2026,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,CO,7352142,SAMPLE
+2026,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,PS,13248317,SAMPLE
+2026,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,MOOE,17033550,SAMPLE
+2026,GAA,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,CO,7570467,SAMPLE
+2027,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,PS,13656180,SAMPLE
+2027,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,MOOE,17557945,SAMPLE
+2027,NEP,DOJ,Department of Justice,general_public,DOJ-OSEC,Office of the Secretary,CO,7803531,SAMPLE
+2023,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,PS,7334688,SAMPLE
+2023,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,MOOE,9430313,SAMPLE
+2023,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,CO,4191250,SAMPLE
+2023,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,PS,7237294,SAMPLE
+2023,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,MOOE,9305092,SAMPLE
+2023,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,CO,4135596,SAMPLE
+2024,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,PS,8771220,SAMPLE
+2024,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,MOOE,11277283,SAMPLE
+2024,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,CO,5012126,SAMPLE
+2024,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,PS,9315901,SAMPLE
+2024,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,MOOE,11977587,SAMPLE
+2024,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,CO,5323372,SAMPLE
+2025,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,PS,10269644,SAMPLE
+2025,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,MOOE,13203829,SAMPLE
+2025,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,CO,5868368,SAMPLE
+2025,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,PS,10027954,SAMPLE
+2025,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,MOOE,12893083,SAMPLE
+2025,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,CO,5730259,SAMPLE
+2026,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,PS,11375780,SAMPLE
+2026,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,MOOE,14626002,SAMPLE
+2026,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,CO,6500446,SAMPLE
+2026,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,PS,12576813,SAMPLE
+2026,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,MOOE,16170188,SAMPLE
+2026,GAA,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,CO,7186750,SAMPLE
+2027,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,PS,12772269,SAMPLE
+2027,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,MOOE,16421489,SAMPLE
+2027,NEP,DFA,Department of Foreign Affairs,general_public,DFA-OSEC,Office of the Secretary,CO,7298440,SAMPLE
+2023,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,PS,40656792,SAMPLE
+2023,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,MOOE,10164198,SAMPLE
+2023,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,CO,5646777,SAMPLE
+2023,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,PS,44559493,SAMPLE
+2023,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,MOOE,11139873,SAMPLE
+2023,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,CO,6188818,SAMPLE
+2024,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,PS,43830335,SAMPLE
+2024,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,MOOE,10957584,SAMPLE
+2024,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,CO,6087547,SAMPLE
+2024,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,PS,47934347,SAMPLE
+2024,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,MOOE,11983587,SAMPLE
+2024,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,CO,6657548,SAMPLE
+2025,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,PS,46634736,SAMPLE
+2025,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,MOOE,11658684,SAMPLE
+2025,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,CO,6477047,SAMPLE
+2025,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,PS,46149368,SAMPLE
+2025,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,MOOE,11537342,SAMPLE
+2025,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,CO,6409634,SAMPLE
+2026,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,PS,49068166,SAMPLE
+2026,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,MOOE,12267041,SAMPLE
+2026,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,CO,6815023,SAMPLE
+2026,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,PS,47045093,SAMPLE
+2026,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,MOOE,11761273,SAMPLE
+2026,GAA,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,CO,6534041,SAMPLE
+2027,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,PS,50307284,SAMPLE
+2027,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,MOOE,12576821,SAMPLE
+2027,NEP,JUD,The Judiciary,general_public,JUD-SC,Supreme Court and lower courts,CO,6987123,SAMPLE
+2023,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,PS,6524419,SAMPLE
+2023,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,MOOE,8388539,SAMPLE
+2023,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,CO,3728239,SAMPLE
+2023,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,PS,4349613,SAMPLE
+2023,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,MOOE,5592359,SAMPLE
+2023,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,CO,2485493,SAMPLE
+2023,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,PS,6115098,SAMPLE
+2023,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,MOOE,7862269,SAMPLE
+2023,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,CO,3494342,SAMPLE
+2023,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,PS,4076732,SAMPLE
+2023,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,MOOE,5241513,SAMPLE
+2023,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,CO,2329561,SAMPLE
+2024,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,PS,7537238,SAMPLE
+2024,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,MOOE,9690734,SAMPLE
+2024,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,CO,4306993,SAMPLE
+2024,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,PS,5024825,SAMPLE
+2024,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,MOOE,6460489,SAMPLE
+2024,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,CO,2871329,SAMPLE
+2024,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,PS,6958988,SAMPLE
+2024,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,MOOE,8947270,SAMPLE
+2024,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,CO,3976564,SAMPLE
+2024,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,PS,4639325,SAMPLE
+2024,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,MOOE,5964847,SAMPLE
+2024,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,CO,2651043,SAMPLE
+2025,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,PS,8355384,SAMPLE
+2025,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,MOOE,10742636,SAMPLE
+2025,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,CO,4774505,SAMPLE
+2025,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,PS,5570256,SAMPLE
+2025,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,MOOE,7161757,SAMPLE
+2025,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,CO,3183003,SAMPLE
+2025,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,PS,7500664,SAMPLE
+2025,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,MOOE,9643711,SAMPLE
+2025,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,CO,4286094,SAMPLE
+2025,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,PS,5000443,SAMPLE
+2025,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,MOOE,6429140,SAMPLE
+2025,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,CO,2857396,SAMPLE
+2026,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,PS,8963154,SAMPLE
+2026,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,MOOE,11524055,SAMPLE
+2026,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,CO,5121802,SAMPLE
+2026,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,PS,5975436,SAMPLE
+2026,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,MOOE,7682704,SAMPLE
+2026,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,CO,3414535,SAMPLE
+2026,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,PS,8377102,SAMPLE
+2026,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,MOOE,10770559,SAMPLE
+2026,GAA,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,CO,4786915,SAMPLE
+2026,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,PS,5584734,SAMPLE
+2026,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,MOOE,7180373,SAMPLE
+2026,GAA,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,CO,3191277,SAMPLE
+2027,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,PS,9392526,SAMPLE
+2027,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,MOOE,12076105,SAMPLE
+2027,NEP,CONG,Congress of the Philippines,general_public,CONG-HOR,House of Representatives,CO,5367158,SAMPLE
+2027,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,PS,6261684,SAMPLE
+2027,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,MOOE,8050737,SAMPLE
+2027,NEP,CONG,Congress of the Philippines,general_public,CONG-SEN,Senate,CO,3578105,SAMPLE
+2023,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,PS,3781385,SAMPLE
+2023,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,MOOE,4861781,SAMPLE
+2023,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,CO,2160792,SAMPLE
+2023,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,PS,3396051,SAMPLE
+2023,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,MOOE,4366352,SAMPLE
+2023,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,CO,1940601,SAMPLE
+2024,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,PS,3845778,SAMPLE
+2024,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,MOOE,4944572,SAMPLE
+2024,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,CO,2197588,SAMPLE
+2024,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,PS,3912639,SAMPLE
+2024,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,MOOE,5030536,SAMPLE
+2024,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,CO,2235794,SAMPLE
+2025,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,PS,3982252,SAMPLE
+2025,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,MOOE,5120039,SAMPLE
+2025,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,CO,2275573,SAMPLE
+2025,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,PS,3766521,SAMPLE
+2025,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,MOOE,4842670,SAMPLE
+2025,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,CO,2152298,SAMPLE
+2026,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,PS,3886404,SAMPLE
+2026,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,MOOE,4996805,SAMPLE
+2026,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,CO,2220802,SAMPLE
+2026,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,PS,4105600,SAMPLE
+2026,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,MOOE,5278628,SAMPLE
+2026,GAA,OP,Office of the President,general_public,OP-OP,Office of the President,CO,2346057,SAMPLE
+2027,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,PS,3953001,SAMPLE
+2027,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,MOOE,5082430,SAMPLE
+2027,NEP,OP,Office of the President,general_public,OP-OP,Office of the President,CO,2258858,SAMPLE
+2023,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,PS,604833,SAMPLE
+2023,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,MOOE,777643,SAMPLE
+2023,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,CO,345619,SAMPLE
+2023,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,PS,544761,SAMPLE
+2023,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,MOOE,700407,SAMPLE
+2023,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,CO,311292,SAMPLE
+2024,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,PS,716338,SAMPLE
+2024,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,MOOE,921006,SAMPLE
+2024,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,CO,409336,SAMPLE
+2024,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,PS,671235,SAMPLE
+2024,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,MOOE,863017,SAMPLE
+2024,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,CO,383563,SAMPLE
+2025,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,PS,804408,SAMPLE
+2025,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,MOOE,1034238,SAMPLE
+2025,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,CO,459662,SAMPLE
+2025,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,PS,856479,SAMPLE
+2025,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,MOOE,1101188,SAMPLE
+2025,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,CO,489417,SAMPLE
+2026,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,PS,847117,SAMPLE
+2026,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,MOOE,1089150,SAMPLE
+2026,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,CO,484067,SAMPLE
+2026,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,PS,756088,SAMPLE
+2026,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,MOOE,972113,SAMPLE
+2026,GAA,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,CO,432050,SAMPLE
+2027,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,PS,948903,SAMPLE
+2027,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,MOOE,1220018,SAMPLE
+2027,NEP,OVP,Office of the Vice President,general_public,OVP-OVP,Office of the Vice President,CO,542230,SAMPLE
+2023,NEP,BARMM,Bangsamoro Autonomous Region (block grant),general_public,BARMM-BG,Annual block grant,MOOE,74318019,SAMPLE
+2023,GAA,BARMM,Bangsamoro Autonomous Region (block grant),general_public,BARMM-BG,Annual block grant,MOOE,65518491,SAMPLE
+2024,NEP,BARMM,Bangsamoro Autonomous Region (block grant),general_public,BARMM-BG,Annual block grant,MOOE,79822009,SAMPLE
+2024,GAA,BARMM,Bangsamoro Autonomous Region (block grant),general_public,BARMM-BG,Annual block grant,MOOE,82470424,SAMPLE
+2025,NEP,BARMM,Bangsamoro Autonomous Region (block grant),general_public,BARMM-BG,Annual block grant,MOOE,84545541,SAMPLE
+2025,GAA,BARMM,Bangsamoro Autonomous Region (block grant),general_public,BARMM-BG,Annual block grant,MOOE,90318720,SAMPLE
+2026,NEP,BARMM,Bangsamoro Autonomous Region (block grant),general_public,BARMM-BG,Annual block grant,MOOE,88898139,SAMPLE
+2026,GAA,BARMM,Bangsamoro Autonomous Region (block grant),general_public,BARMM-BG,Annual block grant,MOOE,80650511,SAMPLE
+2027,NEP,BARMM,Bangsamoro Autonomous Region (block grant),general_public,BARMM-BG,Annual block grant,MOOE,93040136,SAMPLE
+2023,NEP,LGU,Allocations to Local Government Units,general_public,LGU-NTA,National Tax Allotment,MOOE,729263394,SAMPLE
+2023,NEP,LGU,Allocations to Local Government Units,general_public,LGU-LGSF,Local Government Support Fund,MOOE,46548727,SAMPLE
+2023,GAA,LGU,Allocations to Local Government Units,general_public,LGU-NTA,National Tax Allotment,MOOE,729263394,SAMPLE
+2023,GAA,LGU,Allocations to Local Government Units,general_public,LGU-LGSF,Local Government Support Fund,MOOE,46548727,SAMPLE
+2024,NEP,LGU,Allocations to Local Government Units,general_public,LGU-NTA,National Tax Allotment,MOOE,856839637,SAMPLE
+2024,NEP,LGU,Allocations to Local Government Units,general_public,LGU-LGSF,Local Government Support Fund,MOOE,54691892,SAMPLE
+2024,GAA,LGU,Allocations to Local Government Units,general_public,LGU-NTA,National Tax Allotment,MOOE,856839637,SAMPLE
+2024,GAA,LGU,Allocations to Local Government Units,general_public,LGU-LGSF,Local Government Support Fund,MOOE,54691892,SAMPLE
+2025,NEP,LGU,Allocations to Local Government Units,general_public,LGU-NTA,National Tax Allotment,MOOE,919267250,SAMPLE
+2025,NEP,LGU,Allocations to Local Government Units,general_public,LGU-LGSF,Local Government Support Fund,MOOE,58676633,SAMPLE
+2025,GAA,LGU,Allocations to Local Government Units,general_public,LGU-NTA,National Tax Allotment,MOOE,919267250,SAMPLE
+2025,GAA,LGU,Allocations to Local Government Units,general_public,LGU-LGSF,Local Government Support Fund,MOOE,58676633,SAMPLE
+2026,NEP,LGU,Allocations to Local Government Units,general_public,LGU-NTA,National Tax Allotment,MOOE,1008098068,SAMPLE
+2026,NEP,LGU,Allocations to Local Government Units,general_public,LGU-LGSF,Local Government Support Fund,MOOE,64346685,SAMPLE
+2026,GAA,LGU,Allocations to Local Government Units,general_public,LGU-NTA,National Tax Allotment,MOOE,1008098068,SAMPLE
+2026,GAA,LGU,Allocations to Local Government Units,general_public,LGU-LGSF,Local Government Support Fund,MOOE,64346685,SAMPLE
+2027,NEP,LGU,Allocations to Local Government Units,general_public,LGU-NTA,National Tax Allotment,MOOE,1105445220,SAMPLE
+2027,NEP,LGU,Allocations to Local Government Units,general_public,LGU-LGSF,Local Government Support Fund,MOOE,70560333,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,PS,48391976,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,MOOE,62218255,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,CO,27652558,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,PS,26395623,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,MOOE,33937230,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,CO,15083213,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,PS,7038833,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,MOOE,9049928,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,CO,4022190,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,PS,6158979,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,MOOE,7918687,SAMPLE
+2023,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,CO,3519416,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,PS,50432007,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,MOOE,64841152,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,CO,28818290,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,PS,27508367,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,MOOE,35367901,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,CO,15719067,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,PS,7335565,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,MOOE,9431440,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,CO,4191751,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,PS,6418619,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,MOOE,8252510,SAMPLE
+2023,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,CO,3667782,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,PS,49345383,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,MOOE,63444064,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,CO,28197362,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,PS,26915663,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,MOOE,34605853,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,CO,15380379,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,PS,7177510,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,MOOE,9228227,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,CO,4101434,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,PS,6280321,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,MOOE,8074699,SAMPLE
+2024,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,CO,3588755,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,PS,48512580,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,MOOE,62373317,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,CO,27721474,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,PS,26461407,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,MOOE,34021809,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,CO,15120804,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,PS,7056375,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,MOOE,9072483,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,CO,4032214,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,PS,6174328,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,MOOE,7938422,SAMPLE
+2024,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,CO,3528188,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,PS,52805842,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,MOOE,67893225,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,CO,30174767,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,PS,28803186,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,MOOE,37032668,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,CO,16458964,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,PS,7680850,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,MOOE,9875378,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,CO,4389057,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,PS,6720744,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,MOOE,8640956,SAMPLE
+2025,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,CO,3840425,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,PS,48078878,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,MOOE,61815700,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,CO,27473644,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,PS,26224842,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,MOOE,33717655,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,CO,14985624,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,PS,6993291,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,MOOE,8991375,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,CO,3996166,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,PS,6119130,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,MOOE,7867453,SAMPLE
+2025,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,CO,3496646,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,PS,51602298,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,MOOE,66345812,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,CO,29487027,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,PS,28146708,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,MOOE,36188625,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,CO,16083833,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,PS,7505789,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,MOOE,9650300,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,CO,4289022,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,PS,6567565,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,MOOE,8444012,SAMPLE
+2026,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,CO,3752894,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,PS,52019405,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,MOOE,66882092,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,CO,29725374,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,PS,28374221,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,MOOE,36481141,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,CO,16213840,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,PS,7566459,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,MOOE,9728304,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,CO,4323691,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,PS,6620652,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,MOOE,8512266,SAMPLE
+2026,GAA,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,CO,3783229,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,PS,52686692,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,MOOE,67740033,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-PGF,Pension and Gratuity Fund,CO,30106681,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,PS,28738196,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,MOOE,36949109,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-MPBF,Miscellaneous Personnel Benefits Fund,CO,16421826,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,PS,7663519,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,MOOE,9853096,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-NDRRMF,NDRRM Fund,CO,4379154,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,PS,6705579,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,MOOE,8621459,SAMPLE
+2027,NEP,SPF,Other Special Purpose Funds,general_public,SPF-CF,Contingent Fund,CO,3831759,SAMPLE
+2023,NEP,DEBT,Debt Service — Interest Payments,debt_burden,DEBT-INT,Interest payments,FinEx,580458337,SAMPLE
+2023,GAA,DEBT,Debt Service — Interest Payments,debt_burden,DEBT-INT,Interest payments,FinEx,580458337,SAMPLE
+2024,NEP,DEBT,Debt Service — Interest Payments,debt_burden,DEBT-INT,Interest payments,FinEx,657640058,SAMPLE
+2024,GAA,DEBT,Debt Service — Interest Payments,debt_burden,DEBT-INT,Interest payments,FinEx,657640058,SAMPLE
+2025,NEP,DEBT,Debt Service — Interest Payments,debt_burden,DEBT-INT,Interest payments,FinEx,751949321,SAMPLE
+2025,GAA,DEBT,Debt Service — Interest Payments,debt_burden,DEBT-INT,Interest payments,FinEx,751949321,SAMPLE
+2026,NEP,DEBT,Debt Service — Interest Payments,debt_burden,DEBT-INT,Interest payments,FinEx,787701580,SAMPLE
+2026,GAA,DEBT,Debt Service — Interest Payments,debt_burden,DEBT-INT,Interest payments,FinEx,787701580,SAMPLE
+2027,NEP,DEBT,Debt Service — Interest Payments,debt_burden,DEBT-INT,Interest payments,FinEx,853601456,SAMPLE

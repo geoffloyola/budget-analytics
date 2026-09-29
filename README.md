@@ -1,0 +1,60 @@
+# National Budget Analytics
+
+A private analytics app for a Member's office on the House Committee on Appropriations. It covers:
+
+- **Overview**: the size, sector mix, largest departments, expense types and biggest movers for any budget edition (e.g. FY2027 NEP), plus key findings computed from the numbers.
+- **NEP vs GAA**: any two editions side by side (by default, this year's proposal against the budget in force), with agency drill-down.
+- **Trends**: up to 5 departments across fiscal years, plus sector shares by year.
+- **District lens**: projects and programs in the home district, by category, municipality and year.
+- **AI insights**: plain-language Q&A and briefings from Claude (Opus 5.5), grounded in the loaded data. Answers can be saved as briefings.
+- **Import data**: admins upload GAA/NEP tables as CSV.
+
+Stack: Next.js 14 · Supabase (Postgres + auth + RLS) · Tailwind · Anthropic SDK.
+
+## Try it now (demo mode, sample data)
+
+```bash
+npm install
+npm run sample:generate     # writes data/sample/*.csv (SAMPLE, not official)
+echo "DEMO_MODE=1" > .env.local
+npm run dev
+```
+
+Demo mode reads the sample CSVs from disk and skips sign-in. **Never set `DEMO_MODE` on a real deployment.** A banner flags sample data on every page, and the AI is told to warn about it too.
+
+## Set up for real use
+
+1. **Supabase project**: create one, then run `supabase/migrations/0001_init.sql` in the SQL editor.
+2. **Environment**: copy `.env.example` to `.env.local` and fill it in. Remove `DEMO_MODE`.
+3. **Accounts** (invite-only): in Supabase → Authentication → Users → *Add user* (auto-confirm, set a password). Then grant access:
+   ```sql
+   insert into members (user_id, full_name, role)
+   values ('<user uuid>', 'Rep. …', 'principal');   -- or 'staff' / 'admin'
+   ```
+   Signed-in users without a `members` row see nothing: row-level security blocks every table.
+4. **Load data**: use the *Import data* page (admins) or the CLI:
+   ```bash
+   npm run import -- path/to/gaa-2026.csv path/to/nep-2027.csv
+   ```
+5. **AI**: set `ANTHROPIC_API_KEY` on the server. Optionally set `PRINCIPAL_TITLE` (how the AI refers to the office).
+
+## Data format
+
+Amounts are in **₱ thousands**, the unit DBM prints in the GAA/NEP. Templates are in `data/templates/`.
+
+| File | Columns |
+|---|---|
+| Allocations | `fiscal_year, stage (NEP/GAA), department_code, department_name, sector, agency_code, agency_name, expense_class (PS/MOOE/CO/FinEx), amount_thousands, source` |
+| District items | `fiscal_year, stage, department_code, agency_code, item, province, district, municipality, category, amount_thousands, source` |
+
+`sector` is one of `social, economic, general_public, defense, debt_burden` (DBM's sectoral classification, assigned per department). Re-importing the same year/stage/agency/class updates the row, so corrections are safe. Rows that repeat a key within one file (e.g. several program lines for one agency and class) are added together.
+
+Sources: DBM (GAA, NEP, BESF), the Appropriations Committee secretariat, CPBRD, and agency itemized lists for district projects.
+
+## Not yet covered (good next steps)
+
+- Unprogrammed appropriations and continuing appropriations, as separate from programmed totals
+- Program/activity/project (PAP) level detail below agencies
+- Inflation-adjusted (real) trends
+- Budget utilization / disbursement rates (DBM SAAODB, COA reports)
+- PDF/Excel parsers for DBM's published tables (today the tables are copied into the CSV template)
