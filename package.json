@@ -9,7 +9,8 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "sample:generate": "tsx scripts/generate-sample.ts",
-    "import": "tsx scripts/import-csv.ts"
+    "import": "tsx scripts/import-csv.ts",
+    "sync:compass": "tsx scripts/sync-compass.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.129.0",

@@ -1,5 +1,6 @@
 import { change, peso, pct, pctDelta, SECTORS, sectorLabel } from "@/lib/format";
 import type { AgencyTotal, DepartmentTotal, DistrictItem } from "@/lib/supabase/types";
+import type { ExecutionRow, ExecutionTotal, LgsfProject, LocalRelease } from "@/lib/compass";
 import { editionLabel, type Edition } from "@/lib/data";
 
 // Pure calculations shared by the pages and the AI context builder.
@@ -160,5 +161,39 @@ export function buildDataContext(depts: DepartmentTotal[], agencies: AgencyTotal
     "<home_district_items unit=\"PHP thousands\">",
     ...districtLines,
     "</home_district_items>",
+  ].join("\n");
+}
+
+// Official execution and local release data (DBM COMPASS) for the AI context.
+export function buildCompassContext(
+  totals: ExecutionTotal[],
+  rows: ExecutionRow[],
+  lgsf: LgsfProject[],
+  releases: LocalRelease[]
+): string {
+  const q = (s: string | null) => `"${(s ?? "").replace(/"/g, "'")}"`;
+  return [
+    '<execution_totals unit="PHP thousands" note="government-wide, incl. special purpose funds and automatic appropriations">',
+    "fiscal_year,period,as_of,appropriations,adjustments,total_available,allotments,obligations,disbursements,unreleased,unobligated",
+    ...totals.map((t) =>
+      [t.fiscal_year, t.period, t.as_of, t.appropriations, t.adjustments, t.total_available, t.allotments, t.obligations, t.disbursements, t.unreleased, t.unobligated].join(",")
+    ),
+    "</execution_totals>",
+    '<execution_by_department unit="PHP thousands" note="appropriations = current_year + continuing (carried over); allotments = released; obligations = committed; disbursements = paid">',
+    "fiscal_year,period,department,appropriations,current_year,continuing,unprogrammed_released,total_available,allotments,obligations,disbursements,unreleased,unobligated",
+    ...rows
+      .filter((r) => r.agency === "")
+      .map((r) =>
+        [r.fiscal_year, r.period, q(r.department), r.appropriations, r.current_year ?? "", r.continuing ?? "", r.unprogrammed ?? "", r.total_available, r.allotments, r.obligations, r.disbursements, r.unreleased, r.unobligated].join(",")
+      ),
+    "</execution_by_department>",
+    '<home_province_lgsf_projects unit="PHP thousands">',
+    "fiscal_year,program,municipality,barangay,project,amount",
+    ...lgsf.map((p) => [p.fiscal_year, p.program, q(p.municipality), q(p.barangay), q(p.project), p.amount_thousands].join(",")),
+    "</home_province_lgsf_projects>",
+    '<home_province_saro_releases unit="PHP thousands" note="text-search sample, not complete">',
+    "released_on,department,agency,purpose,amount",
+    ...releases.map((r) => [r.released_on ?? "", q(r.department), q(r.agency), q(r.purpose.slice(0, 200)), r.amount_thousands].join(",")),
+    "</home_province_saro_releases>",
   ].join("\n");
 }

@@ -1,4 +1,6 @@
-// Hand-written to match supabase/migrations/0001_init.sql. Regenerate with
+import type { ExecutionRow, ExecutionTotal, LgsfProject, LocalRelease } from "@/lib/compass";
+
+// Hand-written to match supabase/migrations/. Regenerate with
 // `npx supabase gen types typescript` once the project is linked.
 
 export type Stage = "NEP" | "GAA";
@@ -88,6 +90,10 @@ export type Database = {
       allocations: Table<Allocation, Omit<Allocation, "id" | "imported_at">>;
       district_items: Table<DistrictItem, Omit<DistrictItem, "id" | "imported_at">>;
       briefings: Table<Briefing, { question: string; answer: string }>;
+      execution: Table<ExecutionRow & { id: number; synced_at: string }, ExecutionRow>;
+      execution_totals: Table<ExecutionTotal & { synced_at: string }, ExecutionTotal>;
+      lgsf_projects: Table<LgsfProject & { id: number; synced_at: string }, LgsfProject>;
+      local_releases: Table<LocalRelease & { id: number; synced_at: string }, LocalRelease>;
     };
     Views: {
       department_totals: { Row: DepartmentTotal; Relationships: [] };

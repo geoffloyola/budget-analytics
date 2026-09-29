@@ -5,6 +5,7 @@ import { cache } from "react";
 import { createClient } from "@/lib/supabase/server";
 import { parseAllocations, parseDistrictItems } from "@/lib/csv";
 import type { AgencyTotal, DepartmentTotal, DistrictItem, Stage } from "@/lib/supabase/types";
+import type { ExecutionRow, ExecutionTotal, LgsfProject, LocalRelease } from "@/lib/compass";
 
 // All page data comes through here. Two sources:
 //   • Supabase (normal): members-only, row-level security enforced.
@@ -166,3 +167,90 @@ export function defaultComparison(editions: Edition[]): { base: Edition; target:
       : editions.find((e) => e.stage === "NEP" && e.fiscal_year === target.fiscal_year) ?? editions[1];
   return base ? { base, target } : null;
 }
+
+// ---- Budget execution & releases (DBM COMPASS, via `npm run sync:compass`) --
+
+export type CompassData = {
+  syncedAt: string | null;
+  totals: ExecutionTotal[];
+  rows: ExecutionRow[];
+};
+
+async function readSnapshot<T>(file: string): Promise<{ syncedAt: string; rows: T[]; totals?: unknown[] } | null> {
+  try {
+    return JSON.parse(await readFile(path.join(process.cwd(), "data", "compass", file), "utf8"));
+  } catch {
+    return null;
+  }
+}
+
+const num = <T extends Record<string, unknown>>(r: T, keys: (keyof T)[]) => {
+  const o = { ...r };
+  for (const k of keys) if (o[k] != null) (o as Record<keyof T, unknown>)[k] = Number(o[k]);
+  return o;
+};
+const MEASURES = [
+  "appropriations",
+  "current_year",
+  "continuing",
+  "unprogrammed",
+  "adjustments",
+  "total_available",
+  "allotments",
+  "obligations",
+  "disbursements",
+  "unreleased",
+  "unobligated",
+] as const;
+
+export const getExecution = cache(async (): Promise<CompassData> => {
+  if (DEMO_MODE) {
+    const snap = await readSnapshot<ExecutionRow>("execution.json");
+    return { syncedAt: snap?.syncedAt ?? null, rows: snap?.rows ?? [], totals: (snap?.totals as ExecutionTotal[]) ?? [] };
+  }
+  const supabase = createClient();
+  const [rows, totals] = await Promise.all([
+    fetchAll<ExecutionRow & { synced_at: string }>((from, to) =>
+      supabase.from("execution").select("*").order("fiscal_year").order("department").order("agency").range(from, to)
+    ),
+    fetchAll<ExecutionTotal & { synced_at: string }>((from, to) =>
+      supabase.from("execution_totals").select("*").order("fiscal_year").range(from, to)
+    ),
+  ]);
+  return {
+    syncedAt: totals.map((t) => t.synced_at).sort().pop() ?? null,
+    rows: rows.map((r) => num(r, [...MEASURES])),
+    totals: totals.map((t) => num(t, MEASURES.filter((m) => m in t) as (keyof typeof t)[])),
+  };
+});
+
+export const getLgsfProjects = cache(async (): Promise<{ syncedAt: string | null; rows: LgsfProject[] }> => {
+  if (DEMO_MODE) {
+    const snap = await readSnapshot<LgsfProject>("lgsf.json");
+    return { syncedAt: snap?.syncedAt ?? null, rows: snap?.rows ?? [] };
+  }
+  const supabase = createClient();
+  const rows = await fetchAll<LgsfProject & { synced_at: string }>((from, to) =>
+    supabase.from("lgsf_projects").select("*").eq("province", HOME_PROVINCE).order("fiscal_year").order("id").range(from, to)
+  );
+  return {
+    syncedAt: rows.map((r) => r.synced_at).sort().pop() ?? null,
+    rows: rows.map((r) => num(r, ["amount_thousands", "saro_thousands", "nca_thousands"])),
+  };
+});
+
+export const getLocalReleases = cache(async (): Promise<LocalRelease[]> => {
+  if (DEMO_MODE) return (await readSnapshot<LocalRelease>("releases.json"))?.rows ?? [];
+  const supabase = createClient();
+  const rows = await fetchAll<LocalRelease>((from, to) =>
+    supabase.from("local_releases").select("*").order("released_on", { ascending: false }).range(from, to)
+  );
+  return rows.map((r) => num(r, ["amount_thousands"]));
+});
+
+// Municipalities in the home district, if configured (comma-separated).
+// Empty = show the whole province.
+export const HOME_MUNICIPALITIES = (process.env.NEXT_PUBLIC_HOME_MUNICIPALITIES ?? "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);

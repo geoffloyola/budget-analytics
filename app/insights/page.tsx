@@ -27,7 +27,8 @@ export default async function Insights() {
     `Which departments grew fastest in the ${latest}, and which increases look hardest to justify?`,
     `What did Congress change between the NEP and the GAA last year? Which agencies gained or lost the most?`,
     `Summarize what ${HOME_PROVINCE} ${HOME_DISTRICT} gets in the ${latest} and how it compares with last year.`,
-    `Draft 8 sharp questions for the DPWH budget hearing based on these numbers.`,
+    `Which departments are slowest to commit and spend this year's releases? What should I ask them?`,
+    `Draft 8 sharp questions for the DPWH budget hearing, using its spending record and proposed budget.`,
     `Explain how debt interest payments are squeezing the rest of the budget, in plain language for a press briefing.`,
   ];
 

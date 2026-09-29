@@ -14,6 +14,7 @@ import { change, peso, pct, pctDelta, pesoDelta } from "@/lib/format";
 import { BarList, TrendChart } from "@/components/charts";
 import EditionPicker from "@/components/EditionPicker";
 import { Kpi, NoAccess, PageHeader, SampleBanner } from "@/components/Notices";
+import LocalFunding from "./LocalFunding";
 
 export const dynamic = "force-dynamic";
 
@@ -23,7 +24,7 @@ function groupSum<T>(rows: T[], key: (r: T) => string, value: (r: T) => number) 
   return [...m.entries()].map(([k, v]) => ({ key: k, label: k, value: v })).sort((a, b) => b.value - a.value);
 }
 
-export default async function District({ searchParams }: { searchParams: { e?: string } }) {
+export default async function District({ searchParams }: { searchParams: { e?: string; lfy?: string } }) {
   const viewer = await getViewer();
   if (!viewer.member) return <NoAccess viewer={viewer} />;
 
@@ -34,7 +35,8 @@ export default async function District({ searchParams }: { searchParams: { e?: s
     return (
       <main className="mx-auto max-w-7xl px-4 py-8">
         <PageHeader eyebrow="District lens" title={place} />
-        <div className="card p-6 text-sm text-ink2">
+        <LocalFunding fy={Number(searchParams.lfy) || undefined} />
+        <div className="card mt-8 p-6 text-sm text-ink2">
           No district items loaded yet. Import a district CSV (template in{" "}
           <code className="font-mono">data/templates/district_items_template.csv</code>) with province{" "}
           <strong>{HOME_PROVINCE}</strong> and district <strong>{HOME_DISTRICT}</strong>.
@@ -80,6 +82,12 @@ export default async function District({ searchParams }: { searchParams: { e?: s
         />
       </PageHeader>
 
+      <LocalFunding fy={Number(searchParams.lfy) || undefined} keep={searchParams.e} />
+
+      <div className="mb-4 mt-10 border-t border-border pt-8">
+        <h2 className="text-lg font-semibold">Proposed & enacted district items: {editionLabel(current)}</h2>
+        <p className="text-sm text-ink2">From imported NEP/GAA project lists.</p>
+      </div>
       <SampleBanner show={items.some((i) => i.source === "SAMPLE")} />
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -1,7 +1,16 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { getViewer } from "@/lib/auth";
-import { getAgencyTotals, getDepartmentTotals, getDistrictItems, HOME_DISTRICT, HOME_PROVINCE } from "@/lib/data";
-import { buildDataContext } from "@/lib/analytics";
+import {
+  getAgencyTotals,
+  getDepartmentTotals,
+  getDistrictItems,
+  getExecution,
+  getLgsfProjects,
+  getLocalReleases,
+  HOME_DISTRICT,
+  HOME_PROVINCE,
+} from "@/lib/data";
+import { buildCompassContext, buildDataContext } from "@/lib/analytics";
 import { manilaDate } from "@/lib/time";
 
 export const dynamic = "force-dynamic";
@@ -19,11 +28,11 @@ const INSTRUCTIONS = `You are the budget analyst for the office of ${PRINCIPAL},
 
 The office's home district is ${HOME_PROVINCE}, ${HOME_DISTRICT}.
 
-Your data is in the <budget_data> block below. Amounts there are in THOUSAND pesos; convert when you write (e.g. 1,234,567,890 thousand = ₱1.23 trillion). Always name the edition you are citing (e.g. "FY2027 NEP").
+Your data is in two blocks below. <budget_data> holds NEP/GAA allocations imported by the office. <official_execution> holds official DBM COMPASS data: budget execution by department (released, committed/obligated, paid/disbursed, unreleased) and release orders and Local Government Support Fund projects in the home province. The execution "appropriations" include continuing appropriations carried over from earlier years, so they are not the same as GAA figures; use "current_year" for new appropriations. A year whose period isn't FY is partial-year: say so. Amounts in both blocks are in THOUSAND pesos; convert when you write (e.g. 1,234,567,890 thousand = ₱1.23 trillion). Always name the edition you are citing (e.g. "FY2027 NEP").
 
 How to answer:
 - Ground every figure in the data provided. Compute totals, differences and percentages from the rows yourself and double-check the arithmetic. If the data doesn't cover what's asked (a program-level item, a year not loaded, unprogrammed appropriations), say so plainly and say what document would answer it, e.g. the GAA volume, NEP, BESF or an agency's budget brief. Never invent figures.
-- If any rows have source "SAMPLE" (see <data_status>), open your answer with one line warning that the figures are sample placeholders, not official.
+- If your answer uses <budget_data> and it contains SAMPLE rows (see <data_status>), open with one line warning that those figures are sample placeholders, not official. <official_execution> figures are real; cite them as "DBM COMPASS".
 - Be useful to a legislator: lead with the answer, then the few numbers that matter, then what it implies. Where relevant, suggest pointed questions to raise with the agency during budget hearings or plenary debate, and note realignment options.
 - Stay factual and non-partisan. Distinguish what the numbers show from interpretation.
 - Write in clear English with short paragraphs, bullet points and bold for key figures. Keep routine answers under about 300 words. Briefings can be longer, with headings.`;
@@ -53,13 +62,25 @@ export async function POST(req: Request) {
   const turns = validTurns(await req.json().catch(() => null));
   if (!turns) return Response.json({ error: "Send { messages: [{ role, content }] } ending with a user message." }, { status: 400 });
 
-  const [depts, agencies, district] = await Promise.all([getDepartmentTotals(), getAgencyTotals(), getDistrictItems()]);
+  const [depts, agencies, district, execution, lgsf, releases] = await Promise.all([
+    getDepartmentTotals(),
+    getAgencyTotals(),
+    getDistrictItems(),
+    getExecution(),
+    getLgsfProjects(),
+    getLocalReleases(),
+  ]);
   if (depts.length === 0) return Response.json({ error: "No budget data loaded yet." }, { status: 409 });
 
   const hasSample = depts.some((d) => d.has_sample) || district.some((d) => d.source === "SAMPLE");
   const dataBlock = `<budget_data>\n${buildDataContext(depts, agencies, district)}\n</budget_data>\n<data_status>${
     hasSample ? "Contains SAMPLE rows: generated placeholders, NOT official figures." : "Imported from official documents."
-  }</data_status>`;
+  }</data_status>\n<official_execution source="DBM COMPASS" synced="${execution.syncedAt ?? "never"}">\n${buildCompassContext(
+    execution.totals,
+    execution.rows,
+    lgsf.rows,
+    releases
+  )}\n</official_execution>`;
 
   const stream = client.beta.messages.stream({
     model: "claude-opus-5-5",

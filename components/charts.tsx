@@ -136,7 +136,11 @@ export function TrendChart({
   years,
   series,
   height = 280,
+  unit = "peso",
+  partialLast = false,
 }: {
+  partialLast?: boolean; // last year is year-to-date: marked, and not compared with the prior full year
+  unit?: "peso" | "pct"; // pct: values are ratios, axis runs 0–100%
   years: number[];
   // `slot` pins a series to its palette colour, so removing one line never
   // repaints the others. Defaults to the series' position.
@@ -149,7 +153,10 @@ export function TrendChart({
   const H = height;
   const pad = { l: 64, r: 16, t: 12, b: 28 };
 
+  const fmt = (v: number | null, digits?: number) => (unit === "pct" ? pct(v, digits ?? 1) : peso(v, digits));
+
   const { max, ticks } = useMemo(() => {
+    if (unit === "pct") return { max: 1, ticks: [0, 0.25, 0.5, 0.75, 1] };
     const all = series.flatMap((s) => s.values.filter((v): v is number => v != null));
     const raw = Math.max(...all, 1);
     // round the axis to a clean step
@@ -157,7 +164,7 @@ export function TrendChart({
     const step = [1, 2, 2.5, 5, 10].map((m) => m * mag).find((s) => raw / s <= 5) ?? mag * 10;
     const top = Math.ceil(raw / step) * step;
     return { max: top, ticks: Array.from({ length: Math.round(top / step) + 1 }, (_, i) => i * step) };
-  }, [series]);
+  }, [series, unit]);
 
   const x = (i: number) => pad.l + (years.length === 1 ? 0.5 : i / (years.length - 1)) * (W - pad.l - pad.r);
   const y = (v: number) => pad.t + (1 - v / max) * (H - pad.t - pad.b);
@@ -191,13 +198,14 @@ export function TrendChart({
           <g key={t}>
             <line x1={pad.l} x2={W - pad.r} y1={y(t)} y2={y(t)} stroke="var(--grid)" />
             <text x={pad.l - 8} y={y(t)} dy="0.32em" textAnchor="end" fontSize="11" fill="var(--muted)">
-              {peso(t, 0)}
+              {fmt(t, 0)}
             </text>
           </g>
         ))}
         {years.map((yr, i) => (
           <text key={yr} x={x(i)} y={H - 8} textAnchor="middle" fontSize="11" fill="var(--muted)">
             FY{yr}
+            {partialLast && i === years.length - 1 ? "*" : ""}
           </text>
         ))}
         {hoverIdx != null && (
@@ -230,16 +238,24 @@ export function TrendChart({
       </svg>
       {hoverIdx != null && (
         <Tooltip x={tipLeft} y={20}>
-          <p className="mb-1 font-semibold text-ink">FY{years[hoverIdx]}</p>
+          <p className="mb-1 font-semibold text-ink">
+            FY{years[hoverIdx]}
+            {partialLast && hoverIdx === years.length - 1 ? " (year to date)" : ""}
+          </p>
           {series.map((s, si) => {
             const v = s.values[hoverIdx];
-            const prev = hoverIdx > 0 ? s.values[hoverIdx - 1] : null;
+            const comparable = hoverIdx > 0 && !(partialLast && hoverIdx === years.length - 1);
+            const prev = comparable ? s.values[hoverIdx - 1] : null;
             return (
               <p key={s.key} className="flex items-center gap-2 text-ink2">
                 <span aria-hidden className="h-2 w-2 rounded-sm" style={{ background: color(si) }} />
                 <span className="max-w-40 truncate">{s.label}</span>
-                <span className="ml-auto font-mono text-ink">{peso(v)}</span>
-                {v != null && prev ? <span className="font-mono text-muted">{pctDelta((v - prev) / prev)}</span> : null}
+                <span className="ml-auto font-mono text-ink">{fmt(v)}</span>
+                {v != null && prev ? (
+                  <span className="font-mono text-muted">
+                    {unit === "pct" ? `${v >= prev ? "+" : "−"}${Math.abs((v - prev) * 100).toFixed(1)} pts` : pctDelta((v - prev) / prev)}
+                  </span>
+                ) : null}
               </p>
             );
           })}
