@@ -15,6 +15,7 @@ const config: Config = {
       fontFamily: {
         sans: ["'IBM Plex Sans'", "system-ui", "sans-serif"],
         mono: ["'IBM Plex Mono'", "ui-monospace", "monospace"],
+        display: ["Oswald", "'Arial Narrow'", "system-ui", "sans-serif"],
       },
       colors: {
         page: withAlpha("--page"),
