@@ -33,7 +33,7 @@ export default async function Insights() {
   ];
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-8">
+    <main className="mx-auto max-w-5xl px-4 py-8 lg:px-8">
       <PageHeader
         eyebrow="AI insights"
         title="Ask the budget analyst"

@@ -35,7 +35,7 @@ export default async function District({ searchParams }: { searchParams: { e?: s
 
   if (items.length === 0) {
     return (
-      <main className="mx-auto max-w-7xl px-4 py-8">
+      <main className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
         <PageHeader eyebrow="District lens" title={place} />
         <LocalFunding fy={Number(searchParams.lfy) || undefined} />
         <div className="card mt-8 p-6 text-sm text-ink2">
@@ -75,7 +75,7 @@ export default async function District({ searchParams }: { searchParams: { e?: s
   const hasTrend = (["NEP", "GAA"] as const).some((st) => trendFor(st).filter((v) => v != null).length > 1);
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-8">
+    <main className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
       <PageHeader
         eyebrow="District lens"
         title={place}

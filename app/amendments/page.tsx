@@ -36,7 +36,7 @@ export default async function Amendments({ searchParams }: { searchParams: { fy?
   };
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-8">
+    <main className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
       <PageHeader
         eyebrow="Amendments log"
         title={`FY${fy} amendments`}

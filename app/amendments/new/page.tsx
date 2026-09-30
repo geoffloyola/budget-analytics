@@ -11,7 +11,7 @@ export default async function NewAmendment() {
   if (!viewer.member) return <NoAccess viewer={viewer} />;
   const { depts, years } = await formOptions();
   return (
-    <main className="mx-auto max-w-5xl px-4 py-8">
+    <main className="mx-auto max-w-5xl px-4 py-8 lg:px-8">
       <Link href="/amendments" className="text-sm text-ink2 hover:underline">
         ← Amendments log
       </Link>

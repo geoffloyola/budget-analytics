@@ -44,7 +44,7 @@ export default async function Compare({
   const isDeliberation = base.fiscal_year === target.fiscal_year && stageIndex(base.stage) < stageIndex(target.stage);
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-8">
+    <main className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
       <PageHeader
         eyebrow="Comparison"
         title={`${editionLabel(base)} → ${editionLabel(target)}`}

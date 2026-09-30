@@ -58,14 +58,39 @@ export function PageHeader({
   );
 }
 
-export function Kpi({ label, value, sub, tone }: { label: string; value: string; sub?: string; tone?: "up" | "down" }) {
+export function Kpi({
+  label,
+  value,
+  sub,
+  tone,
+  icon,
+  children,
+}: {
+  label: string;
+  value: string;
+  sub?: string;
+  tone?: "up" | "down";
+  icon?: React.ReactNode; // small icon in a tinted tile, top right
+  children?: React.ReactNode; // e.g. a sparkline
+}) {
   return (
-    <div className="card p-4">
-      <p className="text-xs font-medium text-muted">{label}</p>
-      <p className="mt-1 font-mono text-2xl font-semibold tracking-tight">{value}</p>
+    <div className="card flex flex-col p-5">
+      <div className="flex items-start justify-between gap-3">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.08em] text-muted">{label}</p>
+        {icon && <span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-accentsoft text-accent">{icon}</span>}
+      </div>
+      <div className="mt-2 flex items-end justify-between gap-3">
+        <p className="font-mono text-[28px] font-semibold leading-none tracking-tight text-ink">{value}</p>
+        {children}
+      </div>
       {sub && (
-        <p className="mt-1 text-xs text-ink2">
-          {tone && <span aria-hidden className={tone === "up" ? "text-up" : "text-down"}>{tone === "up" ? "▲ " : "▼ "}</span>}
+        <p className="mt-3 flex flex-wrap items-center gap-1.5 text-xs text-ink2">
+          {tone && (
+            <span className={"inline-flex items-center rounded-full px-1.5 py-0.5 text-[11px] font-semibold " + (tone === "up" ? "bg-up/10 text-up" : "bg-down/10 text-down")}>
+              <span aria-hidden>{tone === "up" ? "▲" : "▼"}</span>
+              <span className="sr-only">{tone === "up" ? "up" : "down"}</span>
+            </span>
+          )}
           {sub}
         </p>
       )}

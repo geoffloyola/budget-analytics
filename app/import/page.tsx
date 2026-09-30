@@ -19,7 +19,7 @@ export default async function ImportPage() {
   }
 
   return (
-    <main className="mx-auto max-w-4xl px-4 py-8">
+    <main className="mx-auto max-w-4xl px-4 py-8 lg:px-8">
       <PageHeader
         eyebrow="Import data"
         title="Load GAA / NEP figures"

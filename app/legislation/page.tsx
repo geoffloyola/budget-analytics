@@ -60,7 +60,7 @@ export default async function Legislation({ searchParams }: { searchParams: { fy
   const changed = rows.filter((r) => r.abs !== 0);
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-8">
+    <main className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
       <PageHeader
         eyebrow="Budget legislation"
         title={`FY${fy} budget in Congress`}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useId, useMemo, useRef, useState } from "react";
 import { peso, pct, pctDelta } from "@/lib/format";
 
 // Small hand-built charts. Conventions (see the data-viz palette in
@@ -49,10 +49,10 @@ export function BarList({
           <span className="truncate text-ink2" title={r.label}>
             {r.label}
           </span>
-          <span className="relative h-3">
+          <span className="relative h-2.5 rounded-full bg-surface2">
             <span
-              className="absolute inset-y-0 left-0 rounded-r bg-s1"
-              style={{ width: `${Math.max((r.value / max) * 100, 0.5)}%` }}
+              className="absolute inset-y-0 left-0 rounded-full bg-s1"
+              style={{ width: `${Math.max((r.value / max) * 100, 1)}%` }}
             />
           </span>
           <span className="w-20 text-right font-mono text-xs tabular-nums">{peso(r.value)}</span>
@@ -130,7 +130,41 @@ export function DeltaBar({ value, maxAbs }: { value: number; maxAbs: number }) {
   );
 }
 
-// ---- Line chart over fiscal years ----------------------------------------------
+// Smooth line through points without overshooting (monotone cubic,
+// Fritsch–Carlson), so a curve never dips below a value it didn't have.
+export function smoothPath(pts: [number, number][]): string {
+  if (pts.length === 0) return "";
+  if (pts.length === 1) return `M${pts[0][0]} ${pts[0][1]}`;
+  const n = pts.length;
+  const dx = pts.slice(1).map((p, i) => p[0] - pts[i][0]);
+  const m = pts.slice(1).map((p, i) => (p[1] - pts[i][1]) / dx[i]);
+  const t = pts.map((_, i) => (i === 0 ? m[0] : i === n - 1 ? m[n - 2] : m[i - 1] * m[i] <= 0 ? 0 : (m[i - 1] + m[i]) / 2));
+  for (let i = 0; i < n - 1; i++) {
+    if (m[i] === 0) {
+      t[i] = 0;
+      t[i + 1] = 0;
+      continue;
+    }
+    const a = t[i] / m[i];
+    const b = t[i + 1] / m[i];
+    const h = a * a + b * b;
+    if (h > 9) {
+      const k = 3 / Math.sqrt(h);
+      t[i] = k * a * m[i];
+      t[i + 1] = k * b * m[i];
+    }
+  }
+  let d = `M${pts[0][0]} ${pts[0][1]}`;
+  for (let i = 0; i < n - 1; i++) {
+    const [x0, y0] = pts[i];
+    const [x1, y1] = pts[i + 1];
+    const h = dx[i] / 3;
+    d += `C${x0 + h} ${y0 + h * t[i]} ${x1 - h} ${y1 - h * t[i + 1]} ${x1} ${y1}`;
+  }
+  return d;
+}
+
+// ---- Line chart over fiscal years (or budget versions) --------------------------
 
 export function TrendChart({
   years,
@@ -138,7 +172,11 @@ export function TrendChart({
   height = 280,
   unit = "peso",
   partialLast = false,
+  labels,
+  area,
 }: {
+  labels?: string[]; // x-axis words instead of "FY<year>" (e.g. "FY2026 NEP")
+  area?: boolean; // shaded area under the line; default when there is one series
   partialLast?: boolean; // last year is year-to-date: marked, and not compared with the prior full year
   unit?: "peso" | "pct"; // pct: values are ratios, axis runs 0–100%
   years: number[];
@@ -148,10 +186,13 @@ export function TrendChart({
   height?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const gid = useId().replace(/:/g, "");
+  const shade = area ?? series.length === 1;
+  const xLabel = (i: number) => labels?.[i] ?? `FY${years[i]}`;
   const [hoverIdx, setHoverIdx] = useState<number | null>(null);
   const W = 720;
   const H = height;
-  const pad = { l: 64, r: 16, t: 12, b: 28 };
+  const pad = { l: 64, r: labels ? 44 : 24, t: 12, b: 28 };
 
   const fmt = (v: number | null, digits?: number) => (unit === "pct" ? pct(v, digits ?? 1) : peso(v, digits));
 
@@ -203,22 +244,45 @@ export function TrendChart({
           </g>
         ))}
         {years.map((yr, i) => (
-          <text key={yr} x={x(i)} y={H - 8} textAnchor="middle" fontSize="11" fill="var(--muted)">
-            FY{yr}
+          <text key={`${yr}-${i}`} x={x(i)} y={H - 8} textAnchor="middle" fontSize="11" fill="var(--muted)">
+            {xLabel(i)}
             {partialLast && i === years.length - 1 ? "*" : ""}
           </text>
         ))}
         {hoverIdx != null && (
           <line x1={x(hoverIdx)} x2={x(hoverIdx)} y1={pad.t} y2={H - pad.b} stroke="var(--muted)" strokeDasharray="3 3" />
         )}
+        {shade && (
+          <defs>
+            {series.map((s, si) => (
+              <linearGradient key={s.key} id={`${gid}-${si}`} x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stopColor={color(si)} stopOpacity={0.22} />
+                <stop offset="100%" stopColor={color(si)} stopOpacity={0} />
+              </linearGradient>
+            ))}
+          </defs>
+        )}
         {series.map((s, si) => {
-          const pts = s.values
-            .map((v, i) => (v == null ? null : `${x(i)},${y(v)}`))
-            .filter(Boolean)
-            .join(" ");
+          // Consecutive non-empty points form one smooth run; a gap breaks it.
+          const runs: [number, number][][] = [];
+          s.values.forEach((v, i) => {
+            if (v == null) return void runs.push([]);
+            if (!runs.length) runs.push([]);
+            runs[runs.length - 1].push([x(i), y(v)]);
+          });
+          const base = y(0);
           return (
             <g key={s.key}>
-              <polyline points={pts} fill="none" stroke={color(si)} strokeWidth={2} strokeLinejoin="round" />
+              {runs
+                .filter((r) => r.length > 0)
+                .map((r, ri) => (
+                  <g key={ri}>
+                    {shade && r.length > 1 && (
+                      <path d={`${smoothPath(r)}L${r[r.length - 1][0]} ${base}L${r[0][0]} ${base}Z`} fill={`url(#${gid}-${si})`} />
+                    )}
+                    <path d={smoothPath(r)} fill="none" stroke={color(si)} strokeWidth={2.25} strokeLinecap="round" strokeLinejoin="round" />
+                  </g>
+                ))}
               {s.values.map((v, i) =>
                 v == null ? null : (
                   <circle
@@ -239,7 +303,7 @@ export function TrendChart({
       {hoverIdx != null && (
         <Tooltip x={tipLeft} y={20}>
           <p className="mb-1 font-semibold text-ink">
-            FY{years[hoverIdx]}
+            {xLabel(hoverIdx)}
             {partialLast && hoverIdx === years.length - 1 ? " (year to date)" : ""}
           </p>
           {series.map((s, si) => {
@@ -272,5 +336,107 @@ export function TrendChart({
         </ul>
       )}
     </div>
+  );
+}
+
+// ---- Donut: part-to-whole with a total in the middle -----------------------------
+
+export function Donut({
+  segments,
+  centerLabel = "Total",
+}: {
+  segments: { key: string; label: string; value: number }[];
+  centerLabel?: string;
+}) {
+  const [hover, setHover] = useState<string | null>(null);
+  const total = segments.reduce((sum, x) => sum + x.value, 0) || 1;
+  const R = 70;
+  const r = 50; // inner radius: ring thickness 20
+  const C = 90; // centre
+  const arc = (a0: number, a1: number) => {
+    // Rounded so the server and the browser draw byte-identical paths.
+    const p = (a: number, rad: number) => [+(C + rad * Math.sin(a)).toFixed(2), +(C - rad * Math.cos(a)).toFixed(2)];
+    const large = a1 - a0 > Math.PI ? 1 : 0;
+    const [x0, y0] = p(a0, R);
+    const [x1, y1] = p(a1, R);
+    const [x2, y2] = p(a1, r);
+    const [x3, y3] = p(a0, r);
+    return `M${x0} ${y0}A${R} ${R} 0 ${large} 1 ${x1} ${y1}L${x2} ${y2}A${r} ${r} 0 ${large} 0 ${x3} ${y3}Z`;
+  };
+  let acc = 0;
+  const shown = hover ? segments.find((x) => x.key === hover) : null;
+  return (
+    <div className="flex flex-col items-center gap-5 sm:flex-row xl:flex-col 2xl:flex-row">
+      <svg viewBox="0 0 180 180" className="h-44 w-44 shrink-0" role="img" aria-label={segments.map((x) => `${x.label} ${pct(x.value / total)}`).join(", ")}>
+        {segments.map((x, i) => {
+          const a0 = (acc / total) * 2 * Math.PI;
+          acc += x.value;
+          const a1 = (acc / total) * 2 * Math.PI;
+          if (x.value <= 0) return null;
+          return (
+            <path
+              key={x.key}
+              d={arc(a0, Math.max(a1 - 0.0001, a0))}
+              fill={SERIES[i % SERIES.length]}
+              stroke="var(--surface)"
+              strokeWidth={2}
+              opacity={hover && hover !== x.key ? 0.35 : 1}
+              onMouseEnter={() => setHover(x.key)}
+              onMouseLeave={() => setHover(null)}
+            >
+              <title>{`${x.label}: ${peso(x.value)} (${pct(x.value / total)})`}</title>
+            </path>
+          );
+        })}
+        <text x={C} y={C - 6} textAnchor="middle" fontSize="10.5" fill="var(--muted)">
+          {shown ? shown.label.split(" ")[0] : centerLabel}
+        </text>
+        <text x={C} y={C + 13} textAnchor="middle" fontSize="17" fontWeight="600" fill="var(--ink)">
+          {shown ? pct(shown.value / total, 0) : peso(total)}
+        </text>
+      </svg>
+      <ul className="w-full min-w-0 flex-1 space-y-2 text-sm">
+        {segments.map((x, i) => (
+          <li
+            key={x.key}
+            className={"flex items-center gap-2 rounded-md px-1.5 py-0.5 " + (hover === x.key ? "bg-surface2" : "")}
+            onMouseEnter={() => setHover(x.key)}
+            onMouseLeave={() => setHover(null)}
+          >
+            <span aria-hidden className="h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: SERIES[i % SERIES.length] }} />
+            <span className="min-w-0 flex-1 truncate text-ink2">{x.label}</span>
+            <span className="font-mono text-xs tabular-nums">{peso(x.value)}</span>
+            <span className="w-11 text-right font-mono text-xs tabular-nums text-muted">{pct(x.value / total, 0)}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+// ---- Sparkline: the shape of a series, for a stat tile ---------------------------
+
+export function Sparkline({ values, label }: { values: number[]; label: string }) {
+  const gid = useId().replace(/:/g, "");
+  if (values.length < 2) return null;
+  const W = 120;
+  const H = 36;
+  const lo = Math.min(...values);
+  const hi = Math.max(...values);
+  const pts: [number, number][] = values.map((v, i) => [2 + (i / (values.length - 1)) * (W - 4), 4 + (1 - (hi === lo ? 0.5 : (v - lo) / (hi - lo))) * (H - 8)]);
+  const d = smoothPath(pts);
+  const last = pts[pts.length - 1];
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} className="h-9 w-28" role="img" aria-label={label}>
+      <defs>
+        <linearGradient id={gid} x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stopColor="var(--s1)" stopOpacity={0.25} />
+          <stop offset="100%" stopColor="var(--s1)" stopOpacity={0} />
+        </linearGradient>
+      </defs>
+      <path d={`${d}L${last[0]} ${H}L${pts[0][0]} ${H}Z`} fill={`url(#${gid})`} />
+      <path d={d} fill="none" stroke="var(--s1)" strokeWidth={2} strokeLinecap="round" />
+      <circle cx={last[0]} cy={last[1]} r={3} fill="var(--s1)" stroke="var(--surface)" strokeWidth={1.5} />
+    </svg>
   );
 }

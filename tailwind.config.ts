@@ -41,6 +41,7 @@ const config: Config = {
         s3: withAlpha("--s3"),
         s4: withAlpha("--s4"),
         s5: withAlpha("--s5"),
+        accentsoft: "var(--accent-soft)",
         up: withAlpha("--up"),
         down: withAlpha("--down"),
       },

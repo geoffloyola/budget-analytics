@@ -9,9 +9,9 @@ You need an account from the office administrator; there is no sign-up page. The
 1. Open [ph-budget-analytics.netlify.app](https://ph-budget-analytics.netlify.app).
 2. Sign in with the email and the **temporary password** the administrator gave you.
 3. The first time, the app asks you to choose **your own password**: at least 8 characters, with a letter and a number. Type the temporary password once more, then your new password twice.
-4. You land on the **Overview** page. Use the menu along the top to move between pages.
+4. You land on the **Overview** page. Use the menu on the left to move between pages. On a phone, tap **☰** at the top right to open it.
 
-To change your password later, click your name at the top right. To leave, click **Sign out**, especially on a shared computer.
+Your name is at the bottom of the menu. Click **Password** there to change your password, or **Sign out** to leave, especially on a shared computer.
 
 | Menu item | Use it to |
 | --- | --- |

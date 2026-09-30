@@ -30,7 +30,7 @@ export default async function Spending({ searchParams }: { searchParams: { fy?: 
   const { rows, totals, syncedAt } = await getExecution();
   if (totals.length === 0) {
     return (
-      <main className="mx-auto max-w-7xl px-4 py-8">
+      <main className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
         <PageHeader eyebrow="Spending performance" title="No execution data yet" />
         <div className="card p-6 text-sm text-ink2">
           Run <code className="font-mono">npm run sync:compass</code> to pull budget execution data from DBM COMPASS.
@@ -84,7 +84,7 @@ export default async function Spending({ searchParams }: { searchParams: { fy?: 
   const trendTotal = trendYears.map((y) => totals.find((t) => t.fiscal_year === y)!);
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-8">
+    <main className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
       <PageHeader
         eyebrow="Spending performance"
         title={`FY${fy} budget execution`}

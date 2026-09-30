@@ -15,7 +15,7 @@ export default async function EditAmendment({ params }: { params: { id: string }
   if (!found) notFound();
   const a = found.amendment;
   return (
-    <main className="mx-auto max-w-5xl px-4 py-8">
+    <main className="mx-auto max-w-5xl px-4 py-8 lg:px-8">
       <Link href={`/amendments/${a.id}`} className="text-sm text-ink2 hover:underline">
         ← Back
       </Link>

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import SiteHeader from "@/components/SiteHeader";
+import AppShell from "@/components/AppShell";
 
 // IBM Plex loads via a Google Fonts <link> rather than next/font/google, which
 // fetches at build time and fails in network-restricted builds.
@@ -21,8 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen font-sans antialiased">
-        <SiteHeader />
-        {children}
+        <AppShell>{children}</AppShell>
       </body>
     </html>
   );

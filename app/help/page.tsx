@@ -20,7 +20,7 @@ export default async function Help() {
   const toc = headingsOf(ordered);
 
   return (
-    <main className="mx-auto max-w-6xl px-4 py-8">
+    <main className="mx-auto max-w-6xl px-4 py-8 lg:px-8">
       <div className="grid gap-8 lg:grid-cols-[14rem_minmax(0,1fr)]">
         <nav aria-label="Contents" className="no-print lg:sticky lg:top-6 lg:self-start">
           <p className="eyebrow mb-2">Contents</p>

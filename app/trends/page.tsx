@@ -46,7 +46,7 @@ export default async function Trends({ searchParams }: { searchParams: { d?: str
   };
 
   return (
-    <main className="mx-auto max-w-7xl px-4 py-8">
+    <main className="mx-auto max-w-7xl px-4 py-8 lg:px-8">
       <PageHeader
         eyebrow="Trends"
         title={`Department budgets over time (${stage})`}

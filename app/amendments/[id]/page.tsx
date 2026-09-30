@@ -23,7 +23,7 @@ export default async function AmendmentPage({ params }: { params: { id: string }
   const t = totals(a);
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-8">
+    <main className="mx-auto max-w-5xl px-4 py-8 lg:px-8">
       <Link href={`/amendments?fy=${a.fiscal_year}`} className="text-sm text-ink2 hover:underline">
         ← Amendments log
       </Link>
