@@ -193,6 +193,27 @@ type RawLgsf = {
 const title = (s: string | null) =>
   s ? s.toLowerCase().replace(/(^|[\s(-])\S/g, (c) => c.toUpperCase()).trim() : null;
 
+// DBM sometimes lists separate grants under one description (same year, place
+// and wording, different amounts). Combine them so each project key is unique
+// and totals still match COMPASS.
+export function mergeLgsf(rows: LgsfProject[]): LgsfProject[] {
+  const byKey = new Map<string, LgsfProject & { count: number }>();
+  const add = (a: number | null, b: number | null) => (a == null && b == null ? null : (a ?? 0) + (b ?? 0));
+  for (const r of rows) {
+    const key = [r.fiscal_year, r.program, r.province, r.municipality, r.barangay, r.project].join("|");
+    const prev = byKey.get(key);
+    if (!prev) {
+      byKey.set(key, { ...r, count: 1 });
+      continue;
+    }
+    prev.amount_thousands += r.amount_thousands;
+    prev.saro_thousands = add(prev.saro_thousands, r.saro_thousands);
+    prev.nca_thousands = add(prev.nca_thousands, r.nca_thousands);
+    prev.count++;
+  }
+  return [...byKey.values()].map(({ count, ...r }) => (count > 1 ? { ...r, project: `${r.project} (${count} releases)` } : r));
+}
+
 export async function fetchLgsf(province: string, years: number[], log: Progress): Promise<LgsfProject[]> {
   const out: LgsfProject[] = [];
   for (const source of LGSF_SOURCES) {
@@ -224,7 +245,7 @@ export async function fetchLgsf(province: string, years: number[], log: Progress
     }
     log(`LGSF ${source}: ${out.filter((p) => p.program === source).length} ${province} projects`);
   }
-  return out;
+  return mergeLgsf(out);
 }
 
 type RawSaro = {

@@ -284,10 +284,10 @@
    "province": "Bataan",
    "municipality": null,
    "barangay": null,
-   "project": "Assistance to indigent individuals or families: Medical",
-   "amount_thousands": 12000,
-   "saro_thousands": 12000,
-   "nca_thousands": 12000
+   "project": "Assistance to indigent individuals or families: Medical (3 releases)",
+   "amount_thousands": 13200,
+   "saro_thousands": 13200,
+   "nca_thousands": 13200
   },
   {
    "fiscal_year": 2024,
@@ -343,28 +343,6 @@
    "amount_thousands": 3000,
    "saro_thousands": 3000,
    "nca_thousands": 3000
-  },
-  {
-   "fiscal_year": 2024,
-   "program": "LGSF_FA",
-   "province": "Bataan",
-   "municipality": null,
-   "barangay": null,
-   "project": "Assistance to indigent individuals or families: Medical",
-   "amount_thousands": 1000,
-   "saro_thousands": 1000,
-   "nca_thousands": 1000
-  },
-  {
-   "fiscal_year": 2024,
-   "program": "LGSF_FA",
-   "province": "Bataan",
-   "municipality": null,
-   "barangay": null,
-   "project": "Assistance to indigent individuals or families: Medical",
-   "amount_thousands": 200,
-   "saro_thousands": 200,
-   "nca_thousands": 200
   },
   {
    "fiscal_year": 2023,

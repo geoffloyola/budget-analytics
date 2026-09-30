@@ -11,7 +11,7 @@ import { config } from "dotenv";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { createClient } from "@supabase/supabase-js";
-import { fetchExecution, fetchLgsf, fetchLocalReleases } from "../lib/compass";
+import { fetchExecution, fetchLgsf, fetchLocalReleases, mergeLgsf } from "../lib/compass";
 
 config({ path: ".env.local" });
 
@@ -47,7 +47,7 @@ async function main() {
     const lgsf = read("lgsf.json");
     const rel = read("releases.json");
     console.log(`Loading snapshot from ${exec.syncedAt}: ${exec.rows.length} execution rows, ${lgsf.rows.length} LGSF projects, ${rel.rows.length} releases.`);
-    await save(exec.totals, exec.rows, lgsf.rows, rel.rows);
+    await save(exec.totals, exec.rows, mergeLgsf(lgsf.rows), rel.rows);
     return;
   }
 
