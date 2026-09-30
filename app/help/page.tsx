@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { getViewer } from "@/lib/auth";
 import { headingsOf, Markdown } from "@/lib/markdown";
 import BudgetCycleDiagram from "@/components/BudgetCycleDiagram";
@@ -22,11 +21,6 @@ export default async function Help() {
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-8">
-      {!viewer.member && !viewer.email && (
-        <Link href="/login" className="mb-4 inline-block text-sm text-ink2 hover:underline">
-          ← Back to sign in
-        </Link>
-      )}
       <div className="grid gap-8 lg:grid-cols-[14rem_minmax(0,1fr)]">
         <nav aria-label="Contents" className="no-print lg:sticky lg:top-6 lg:self-start">
           <p className="eyebrow mb-2">Contents</p>
