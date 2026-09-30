@@ -9,3 +9,6 @@ next-env.d.ts
 data/sources/
 .claude/
 .next-check
+.DS_Store
+# Reference documents kept locally
+references/
