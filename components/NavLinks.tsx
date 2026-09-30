@@ -12,6 +12,7 @@ const LINKS = [
   { href: "/trends", label: "Trends" },
   { href: "/district", label: "District lens" },
   { href: "/insights", label: "AI insights" },
+  { href: "/help", label: "Help" },
 ];
 
 export default function NavLinks({ isAdmin }: { isAdmin: boolean }) {

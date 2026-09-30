@@ -11,6 +11,7 @@ A private analytics app for a Member's office on the House Committee on Appropri
 - **District lens**: official Local Government Support Fund projects and release orders (SAROs) for the home province from DBM COMPASS, plus imported NEP/GAA district project lists.
 - **AI insights**: plain-language Q&A and briefings from Claude (Opus 5.5), grounded in the loaded data. Answers can be saved as briefings.
 - **Import data**: admins upload GAA/NEP tables as CSV.
+- **Help**: the user manual, from `content/user-manual.md` (plus `content/user-manual-admin.md`, shown only to admins). Open without sign-in, and linked from the sign-in page. Edit those files and push to update it.
 
 Stack: Next.js 14 · Supabase (Postgres + auth + RLS) · Tailwind · Anthropic SDK.
 

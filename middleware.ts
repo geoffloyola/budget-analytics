@@ -5,7 +5,8 @@ import { NextResponse, type NextRequest } from "next/server";
 // budget analysis for the Congressman's office is internal. Membership (who
 // may read data at all) is enforced in the database by row-level security.
 // In DEMO_MODE (dev only) the app serves sample CSVs from disk and skips sign-in.
-const PUBLIC_PATHS = ["/login"];
+// /help is open so people who can't sign in can read the troubleshooting guide.
+const PUBLIC_PATHS = ["/login", "/help"];
 
 export async function middleware(request: NextRequest) {
   // Demo mode (sample data, no sign-in) only under `next dev`; see lib/data.ts.

@@ -33,6 +33,12 @@ export default function LoginPage({
           Sign in
         </button>
       </form>
+      <p className="mt-4 text-center text-sm text-ink2">
+        Trouble signing in?{" "}
+        <a href="/help#troubleshooting" className="text-accent underline underline-offset-2">
+          Read the help guide
+        </a>
+      </p>
     </main>
   );
 }
