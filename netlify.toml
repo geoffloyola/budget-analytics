@@ -7,3 +7,8 @@
 [build.environment]
   NODE_VERSION = "20"
   NEXT_TELEMETRY_DISABLED = "1"
+  # The Supabase URL and anon key are public by design: Next.js inlines
+  # NEXT_PUBLIC_* values into the browser bundle, and row-level security is
+  # what protects the data. Everything else, above all
+  # SUPABASE_SERVICE_ROLE_KEY and ANTHROPIC_API_KEY, stays scanned.
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_SUPABASE_ANON_KEY,NEXT_PUBLIC_SUPABASE_URL"
