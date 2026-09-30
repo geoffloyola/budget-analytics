@@ -20,7 +20,9 @@ export default async function SiteHeader() {
             <span className="badge bg-gold text-brand">Demo mode</span>
           ) : (
             <>
-              <span className="hidden md:inline">{viewer.member?.full_name ?? viewer.email}</span>
+              <Link href="/account" className="hidden rounded px-2 py-1 hover:bg-brand2 hover:text-onbrand md:inline" title="Change password">
+                {viewer.member?.full_name ?? viewer.email}
+              </Link>
               <form action={signOut}>
                 <button className="rounded px-2 py-1 hover:bg-brand2 hover:text-onbrand">Sign out</button>
               </form>

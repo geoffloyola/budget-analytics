@@ -11,7 +11,9 @@ import type { ExecutionRow, ExecutionTotal, LgsfProject, LocalRelease } from "@/
 //   • Supabase (normal): members-only, row-level security enforced.
 //   • DEMO_MODE=1: reads data/sample/*.csv from disk, no login. For showing
 //     the app before Supabase is set up. Never set it on a real deployment.
-export const DEMO_MODE = process.env.DEMO_MODE === "1";
+// Only honoured by `next dev`: a production build (Netlify) always requires
+// sign-in, even if DEMO_MODE is set there by mistake.
+export const DEMO_MODE = process.env.DEMO_MODE === "1" && process.env.NODE_ENV !== "production";
 
 export const HOME_PROVINCE = process.env.NEXT_PUBLIC_HOME_PROVINCE ?? "Bataan";
 export const HOME_DISTRICT = process.env.NEXT_PUBLIC_HOME_DISTRICT ?? "2nd District";

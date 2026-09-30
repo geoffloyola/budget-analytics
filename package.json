@@ -10,7 +10,10 @@
     "typecheck": "tsc --noEmit",
     "sample:generate": "tsx scripts/generate-sample.ts",
     "import": "tsx scripts/import-csv.ts",
-    "sync:compass": "tsx scripts/sync-compass.ts"
+    "sync:compass": "tsx scripts/sync-compass.ts",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "member:add": "tsx scripts/add-member.ts",
+    "sync:compass:load": "tsx scripts/sync-compass.ts --from-snapshot"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.129.0",
@@ -24,10 +27,12 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.10",
+    "@types/pg": "^8.23.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.19",
     "dotenv": "^16.4.5",
+    "pg": "^8.23.0",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.4",
     "tsx": "^4.16.2",

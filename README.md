@@ -23,21 +23,19 @@ npm run dev
 
 Demo mode reads the sample CSVs from disk and skips sign-in. **Never set `DEMO_MODE` on a real deployment.** A banner flags sample data on every page, and the AI is told to warn about it too.
 
-## Set up for real use
+## Set up for real use (Supabase + Netlify)
 
-1. **Supabase project**: create one, then run `supabase/migrations/0001_init.sql` in the SQL editor.
-2. **Environment**: copy `.env.example` to `.env.local` and fill it in. Remove `DEMO_MODE`.
-3. **Accounts** (invite-only): in Supabase → Authentication → Users → *Add user* (auto-confirm, set a password). Then grant access:
-   ```sql
-   insert into members (user_id, full_name, role)
-   values ('<user uuid>', 'Rep. …', 'principal');   -- or 'staff' / 'admin'
-   ```
-   Signed-in users without a `members` row see nothing: row-level security blocks every table.
-4. **Load data**: use the *Import data* page (admins) or the CLI:
+1. **Supabase**: create a project, then fill `.env.local` from `.env.example` (URL, anon key, service-role key, and `SUPABASE_DB_URL`). Remove `DEMO_MODE`.
+2. **Database**: `npm run db:migrate` creates the tables and security rules.
+3. **Data**: `npm run sync:compass:load` loads the saved COMPASS snapshot (or `npm run sync:compass` for a fresh pull). Import GAA/NEP CSVs with `npm run import -- file.csv` or the *Import data* page.
+4. **People** (invite-only): create each sign-in in Supabase → Authentication → Users → *Add user* (tick *Auto Confirm User*, give a temporary password), then grant access:
    ```bash
-   npm run import -- path/to/gaa-2026.csv path/to/nep-2027.csv
+   npm run member:add -- someone@example.com "Full Name" staff   # or principal / admin
    ```
-5. **AI**: set `ANTHROPIC_API_KEY` on the server. Optionally set `PRINCIPAL_TITLE` (how the AI refers to the office).
+   On first sign-in they must choose their own password. Signed-in users who aren't members see no data: row-level security blocks every table.
+5. **Netlify**: import the GitHub repo. Set these environment variables: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`, `ANTHROPIC_API_KEY`, `NEXT_PUBLIC_HOME_PROVINCE`, `NEXT_PUBLIC_HOME_DISTRICT`, and optionally `NEXT_PUBLIC_HOME_MUNICIPALITIES` and `PRINCIPAL_TITLE`. In Supabase → Authentication → URL Configuration, set the Site URL to the Netlify address.
+
+`DEMO_MODE` only works under `npm run dev`. A production build always requires sign-in.
 
 ## Official data from DBM COMPASS
 
