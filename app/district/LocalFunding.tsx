@@ -27,8 +27,10 @@ export default async function LocalFunding({ fy, keep }: { fy?: number; keep?: s
 
   // District filter: configured municipalities, plus projects DBM lists
   // without a municipality (they can't be excluded with certainty).
-  const inDistrict = (m: string | null) =>
-    HOME_MUNICIPALITIES.length === 0 || m == null || HOME_MUNICIPALITIES.some((h) => h.toLowerCase() === m.toLowerCase());
+  // DBM spells cities both ways ("Balanga", "Balanga City", "City of Balanga").
+  const norm = (s: string) => s.toLowerCase().replace(/\bcity( of)?\b/g, "").trim();
+  const home = HOME_MUNICIPALITIES.map(norm);
+  const inDistrict = (m: string | null) => home.length === 0 || m == null || home.includes(norm(m));
   const scoped = allProjects.filter((p) => inDistrict(p.municipality));
 
   const years = [...new Set([...scoped.map((p) => p.fiscal_year), ...allReleases.map((r) => r.fiscal_year)])].sort((a, b) => b - a);
