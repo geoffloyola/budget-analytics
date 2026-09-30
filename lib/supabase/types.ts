@@ -77,6 +77,36 @@ export type Briefing = {
   created_at: string;
 };
 
+export type AmendmentRow = {
+  id: number;
+  fiscal_year: number;
+  title: string;
+  kind: string;
+  proposed_by: string;
+  justification: string | null;
+  status: string;
+  home_district: boolean;
+  created_by: string;
+  created_at: string;
+  updated_at: string;
+};
+export type AmendmentLineRow = {
+  id: number;
+  amendment_id: number;
+  department_code: string;
+  agency_code: string | null;
+  item: string | null;
+  amount_thousands: number;
+};
+export type AmendmentEventRow = {
+  id: number;
+  amendment_id: number;
+  status: string;
+  note: string | null;
+  created_by: string;
+  created_at: string;
+};
+
 type Table<Row, Insert = Partial<Row>> = {
   Row: Row;
   Insert: Insert;
@@ -95,10 +125,14 @@ export type Database = {
       execution_totals: Table<ExecutionTotal & { synced_at: string }, ExecutionTotal>;
       lgsf_projects: Table<LgsfProject & { id: number; synced_at: string }, LgsfProject>;
       local_releases: Table<LocalRelease & { id: number; synced_at: string }, LocalRelease>;
+      amendments: Table<AmendmentRow>;
+      amendment_lines: Table<AmendmentLineRow>;
+      amendment_events: Table<AmendmentEventRow>;
     };
     Views: {
       department_totals: { Row: DepartmentTotal; Relationships: [] };
       agency_totals: { Row: AgencyTotal; Relationships: [] };
+      amendment_events_named: { Row: AmendmentEventRow & { by_name: string | null }; Relationships: [] };
     };
     Functions: {
       is_member: { Args: Record<string, never>; Returns: boolean };

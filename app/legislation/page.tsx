@@ -7,6 +7,7 @@ import { calendarStatus, monthRange, STAGES } from "@/lib/stages";
 import { manilaDate } from "@/lib/time";
 import type { Stage } from "@/lib/supabase/types";
 import EditionPicker from "@/components/EditionPicker";
+import { isOpen, listAmendments, totals } from "@/lib/amendments";
 import { EmptyState, Kpi, NoAccess, PageHeader } from "@/components/Notices";
 
 export const dynamic = "force-dynamic";
@@ -23,6 +24,9 @@ export default async function Legislation({ searchParams }: { searchParams: { fy
   if (years.length === 0) return <EmptyState />;
   const fy = years.includes(Number(searchParams.fy)) ? Number(searchParams.fy) : years[0];
   const today = manilaDate();
+  const amendments = await listAmendments(fy);
+  const amendmentsFor = (code: string) => amendments.filter((a) => a.lines.some((l) => l.department_code === code));
+  const openAmendments = amendments.filter((a) => isOpen(a.status));
 
   const loaded = STAGES.filter((s) => editions.some((e) => e.fiscal_year === fy && e.stage === s.key));
   const latest = loaded[loaded.length - 1];
@@ -124,6 +128,20 @@ export default async function Legislation({ searchParams }: { searchParams: { fy
         />
       </section>
 
+      <div className="mt-4 flex flex-wrap items-center gap-3 rounded-lg border border-border bg-surface px-4 py-3 text-sm">
+        <span className="font-medium">Amendments log:</span>
+        <span className="text-ink2">
+          {amendments.length} logged for FY{fy}, {openAmendments.length} open
+          {openAmendments.length > 0 && `, adding ${peso(openAmendments.reduce((s, a) => s + totals(a).added, 0))} gross`}
+        </span>
+        <Link href={`/amendments?fy=${fy}`} className="btn-secondary ml-auto py-1 text-xs">
+          Open log
+        </Link>
+        <Link href="/amendments/new" className="btn-primary py-1 text-xs">
+          ＋ Log one
+        </Link>
+      </div>
+
       {loaded.length === 1 && (
         <div role="note" className="mt-5 rounded-lg border border-border bg-surface2 px-4 py-3 text-sm text-ink2">
           Only the NEP is loaded for FY{fy}. When the House version (or a committee draft) is available, import it and this
@@ -182,7 +200,14 @@ export default async function Legislation({ searchParams }: { searchParams: { fy
                         <span aria-hidden className="mr-1 inline-block text-muted transition group-open:rotate-90">›</span>
                         {r.name}
                       </span>
-                      <span className="text-xs text-muted">{sectorLabel(r.sector)}</span>
+                      <span className="text-xs text-muted">
+                        {sectorLabel(r.sector)}
+                        {amendmentsFor(r.code).length > 0 && (
+                          <Link href={`/amendments?fy=${fy}&status=all&dept=${r.code}`} className="ml-2 rounded bg-accent/10 px-1.5 py-0.5 font-medium text-accent hover:underline">
+                            {amendmentsFor(r.code).length} amendment{amendmentsFor(r.code).length === 1 ? "" : "s"}
+                          </Link>
+                        )}
+                      </span>
                     </span>
                     {loaded.map((s, i) => {
                       const prev = i > 0 ? r.at[loaded[i - 1].key] : null;

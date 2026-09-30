@@ -4,6 +4,7 @@ A private analytics app for a Member's office on the House Committee on Appropri
 
 - **Overview**: the size, sector mix, largest departments, expense types and biggest movers for any budget edition (e.g. FY2027 NEP), plus key findings computed from the numbers.
 - **In Congress**: one fiscal year's budget through each version (NEP → House → Senate → Bicam → GAA), per department and agency, with what changed at each step and where the typical calendar says the process is.
+- **Amendments**: the office's log of proposed amendments during deliberations: who proposed each, where the money moves (checked to balance for realignments), and its status from proposed → committee → plenary → Senate → Bicam → enacted (or rejected / withdrawn / vetoed), with a full history of who changed what. Linked from *In Congress* per department, and available to the AI analyst.
 - **Compare**: any two editions side by side (by default, this year's proposal against the budget in force), with agency drill-down.
 - **Spending**: official budget execution from DBM COMPASS. Shows how much each department has been released, has committed and has paid, its unused balances and unreleased funds, and multi-year rates.
 - **Trends**: up to 5 departments across fiscal years, plus sector shares by year.

@@ -12,3 +12,5 @@ data/sources/
 .DS_Store
 # Reference documents kept locally
 references/
+# Demo-mode amendments store (dev only)
+data/demo/

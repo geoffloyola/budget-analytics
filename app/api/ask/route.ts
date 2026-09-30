@@ -11,6 +11,7 @@ import {
   HOME_PROVINCE,
 } from "@/lib/data";
 import { buildCompassContext, buildDataContext } from "@/lib/analytics";
+import { listAmendments, statusLabel, kindLabel } from "@/lib/amendments";
 import { manilaDate } from "@/lib/time";
 
 export const dynamic = "force-dynamic";
@@ -28,7 +29,7 @@ const INSTRUCTIONS = `You are the budget analyst for the office of ${PRINCIPAL},
 
 The office's home district is ${HOME_PROVINCE}, ${HOME_DISTRICT}.
 
-Your data is in two blocks below. <budget_data> holds allocations imported by the office for each budget version: NEP (President's proposal), HOUSE (House version of the GAB), SENATE (Senate version), BICAM (bicameral conference version) and GAA (enacted). For a fiscal year in Congress, compare each version with the one before it to show what changed. <official_execution> holds official DBM COMPASS data: budget execution by department (released, committed/obligated, paid/disbursed, unreleased) and release orders and Local Government Support Fund projects in the home province. The execution "appropriations" include continuing appropriations carried over from earlier years, so they are not the same as GAA figures; use "current_year" for new appropriations. A year whose period isn't FY is partial-year: say so. Amounts in both blocks are in THOUSAND pesos; convert when you write (e.g. 1,234,567,890 thousand = ₱1.23 trillion). Always name the edition you are citing (e.g. "FY2027 NEP").
+Your data is in the blocks below. <budget_data> holds allocations imported by the office for each budget version: NEP (President's proposal), HOUSE (House version of the GAB), SENATE (Senate version), BICAM (bicameral conference version) and GAA (enacted). For a fiscal year in Congress, compare each version with the one before it to show what changed. <official_execution> holds official DBM COMPASS data: budget execution by department (released, committed/obligated, paid/disbursed, unreleased) and release orders and Local Government Support Fund projects in the home province. The execution "appropriations" include continuing appropriations carried over from earlier years, so they are not the same as GAA figures; use "current_year" for new appropriations. A year whose period isn't FY is partial-year: say so. <amendments_log> is the office's own internal log of proposed amendments and their status during deliberations; treat it as confidential working material, not official figures, and say so when you use it. Amounts in both blocks are in THOUSAND pesos; convert when you write (e.g. 1,234,567,890 thousand = ₱1.23 trillion). Always name the edition you are citing (e.g. "FY2027 NEP").
 
 How to answer:
 - Ground every figure in the data provided. Compute totals, differences and percentages from the rows yourself and double-check the arithmetic. If the data doesn't cover what's asked (a program-level item, a year not loaded, unprogrammed appropriations), say so plainly and say what document would answer it, e.g. the GAA volume, NEP, BESF or an agency's budget brief. Never invent figures.
@@ -70,6 +71,7 @@ export async function POST(req: Request) {
     getLgsfProjects(),
     getLocalReleases(),
   ]);
+  const amendments = await listAmendments().catch(() => []);
   if (depts.length === 0) return Response.json({ error: "No budget data loaded yet." }, { status: 409 });
 
   const hasSample = depts.some((d) => d.has_sample) || district.some((d) => d.source === "SAMPLE");
@@ -80,7 +82,9 @@ export async function POST(req: Request) {
     execution.rows,
     lgsf.rows,
     releases
-  )}\n</official_execution>`;
+  )}\n</official_execution>\n<amendments_log unit="PHP thousands" note="office's internal log of proposed amendments; amounts + added, − cut">\n${amendments
+    .map((a) => `#${a.id} FY${a.fiscal_year} [${statusLabel(a.status)}] ${kindLabel(a.kind)}: "${a.title}" by ${a.proposed_by}${a.home_district ? " (home district)" : ""}; ${a.lines.map((l) => `${l.department_code}${l.agency_code ? "/" + l.agency_code : ""}${l.item ? " " + l.item : ""} ${l.amount_thousands}`).join("; ")}`)
+    .join("\n")}\n</amendments_log>`;
 
   const stream = client.beta.messages.stream({
     model: "claude-opus-5-5",
