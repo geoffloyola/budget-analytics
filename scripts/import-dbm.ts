@@ -13,6 +13,7 @@ import ExcelJS from "exceljs";
 import { createClient } from "@supabase/supabase-js";
 import {
   allocationKey,
+  EXPENSE_CLASS,
   categoryOf,
   districtOf,
   municipalityIn,
@@ -31,6 +32,15 @@ const BATAAN_TOWNS = ["Abucay", "Bagac", "Balanga", "Dinalupihan", "Hermosa", "L
 function arg(name: string) {
   const i = process.argv.indexOf(`--${name}`);
   return i > 0 ? process.argv[i + 1] : undefined;
+}
+
+// Some DBM files (e.g. the FY2026 NEP's special purpose fund rows) have the
+// expense class and object code columns swapped: the class ("2") sits in
+// UACS_OBJ_CD and the 10-digit object code in UACS_EXP_CD.
+function expenseClassCode(exp: string, obj: string): string {
+  if (exp in EXPENSE_CLASS) return exp;
+  if (obj in EXPENSE_CLASS) return obj;
+  return exp;
 }
 
 async function read(file: string, onRow: (r: DbmRow) => void) {
@@ -59,7 +69,7 @@ async function read(file: string, onRow: (r: DbmRow) => void) {
         description: s("DSC"),
         operUnit: s("UACS_OPER_DSC"),
         regionId: s("UACS_REG_ID"),
-        expCode: s("UACS_EXP_CD"),
+        expCode: expenseClassCode(s("UACS_EXP_CD"), s("UACS_OBJ_CD")),
         amount,
       });
     }
