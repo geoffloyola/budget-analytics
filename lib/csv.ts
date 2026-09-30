@@ -35,7 +35,7 @@ export const DISTRICT_COLUMNS = [
   "source",
 ] as const;
 
-const STAGES: Stage[] = ["NEP", "GAA"];
+const STAGES: Stage[] = ["NEP", "HOUSE", "SENATE", "BICAM", "GAA"];
 const SECTORS: Sector[] = ["social", "economic", "general_public", "defense", "debt_burden"];
 const CLASSES: ExpenseClass[] = ["PS", "MOOE", "CO", "FinEx"];
 
@@ -83,7 +83,7 @@ export function parseAllocations(text: string): ParseResult<AllocationInsert> {
     const amt = amount(r.amount_thousands);
     const problems = [
       !Number.isInteger(year) && "fiscal_year",
-      !STAGES.includes(stage) && "stage (NEP or GAA)",
+      !STAGES.includes(stage) && `stage (${STAGES.join("/")})`,
       !SECTORS.includes(sector) && `sector (${SECTORS.join("/")})`,
       !cls && "expense_class (PS/MOOE/CO/FinEx)",
       !Number.isFinite(amt) && "amount_thousands",
@@ -124,7 +124,7 @@ export function parseDistrictItems(text: string): ParseResult<DistrictInsert> {
     const amt = amount(r.amount_thousands);
     const problems = [
       !Number.isInteger(year) && "fiscal_year",
-      !STAGES.includes(stage) && "stage (NEP or GAA)",
+      !STAGES.includes(stage) && `stage (${STAGES.join("/")})`,
       !Number.isFinite(amt) && "amount_thousands",
       !r.item && "item",
       !r.province && "province",

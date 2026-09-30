@@ -3,7 +3,8 @@
 A private analytics app for a Member's office on the House Committee on Appropriations. It covers:
 
 - **Overview**: the size, sector mix, largest departments, expense types and biggest movers for any budget edition (e.g. FY2027 NEP), plus key findings computed from the numbers.
-- **NEP vs GAA**: any two editions side by side (by default, this year's proposal against the budget in force), with agency drill-down.
+- **In Congress**: one fiscal year's budget through each version (NEP → House → Senate → Bicam → GAA), per department and agency, with what changed at each step and where the typical calendar says the process is.
+- **Compare**: any two editions side by side (by default, this year's proposal against the budget in force), with agency drill-down.
 - **Spending**: official budget execution from DBM COMPASS. Shows how much each department has been released, has committed and has paid, its unused balances and unreleased funds, and multi-year rates.
 - **Trends**: up to 5 departments across fiscal years, plus sector shares by year.
 - **District lens**: official Local Government Support Fund projects and release orders (SAROs) for the home province from DBM COMPASS, plus imported NEP/GAA district project lists.
@@ -66,7 +67,7 @@ npm run import:dbm -- data/sources/NEP-FY2027.xlsx --year 2027 --stage NEP
 npm run import:dbm -- data/sources/FY2026-GAA-Byobject.xlsx --year 2026 --stage GAA
 ```
 
-Each run takes 1–2 minutes. It prints totals to check against DBM's published figures (add `--dry-run` to check without saving), then replaces that year and stage in Supabase:
+Stages: `NEP`, `HOUSE` (House version of the GAB), `SENATE`, `BICAM` (bicameral conference version), `GAA`. Load each version as it becomes available and the *In Congress* page tracks the changes. Each run takes 1–2 minutes. It prints totals to check against DBM's published figures (add `--dry-run` to check without saving), then replaces that year and stage in Supabase:
 - **allocations**: department/agency × expense class; special purpose funds and automatic appropriations (tax allotment, debt interest, pension fund…) each become their own line
 - **district_items**: every line tied to the home province, via its operating unit (e.g. "Bataan 2nd District Engineering Office", "Division of Bataan") or its description. Items under a district engineering office get that district; the rest are "Province-wide"
 

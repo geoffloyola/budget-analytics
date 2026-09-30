@@ -48,6 +48,9 @@ export const sectorLabel = (s: Sector) => SECTORS.find((x) => x.key === s)?.labe
 
 export const STAGE_LABEL: Record<Stage, string> = {
   NEP: "NEP (proposed)",
+  HOUSE: "House version of the GAB",
+  SENATE: "Senate version of the GAB",
+  BICAM: "Bicameral conference version",
   GAA: "GAA (enacted)",
 };
 

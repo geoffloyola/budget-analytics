@@ -3,7 +3,8 @@ import type { ExecutionRow, ExecutionTotal, LgsfProject, LocalRelease } from "@/
 // Hand-written to match supabase/migrations/. Regenerate with
 // `npx supabase gen types typescript` once the project is linked.
 
-export type Stage = "NEP" | "GAA";
+// Budget versions in cycle order; see lib/stages.ts.
+export type Stage = "NEP" | "HOUSE" | "SENATE" | "BICAM" | "GAA";
 export type Sector = "social" | "economic" | "general_public" | "defense" | "debt_burden";
 export type ExpenseClass = "PS" | "MOOE" | "CO" | "FinEx";
 

@@ -6,6 +6,7 @@ import { createClient } from "@/lib/supabase/server";
 import { parseAllocations, parseDistrictItems } from "@/lib/csv";
 import type { AgencyTotal, DepartmentTotal, DistrictItem, Stage } from "@/lib/supabase/types";
 import type { ExecutionRow, ExecutionTotal, LgsfProject, LocalRelease } from "@/lib/compass";
+import { isStage, stageIndex } from "@/lib/stages";
 
 // All page data comes through here. Two sources:
 //   • Supabase (normal): members-only, row-level security enforced.
@@ -143,28 +144,30 @@ export const getDistrictItems = cache(async (): Promise<DistrictItem[]> => {
   return rows.map((r) => ({ ...r, amount_thousands: Number(r.amount_thousands) }));
 });
 
-// Every (year, stage) that has data, newest first: [{2027,"NEP"}, {2026,"GAA"}, ...]
+// Every (year, stage) that has data, newest first; within a year the latest
+// version first: [{2027,"HOUSE"}, {2027,"NEP"}, {2026,"GAA"}, ...]
 export type Edition = { fiscal_year: number; stage: Stage };
 
 export function editionsOf(depts: DepartmentTotal[]): Edition[] {
   const seen = new Map<string, Edition>();
   for (const d of depts) seen.set(`${d.fiscal_year}|${d.stage}`, { fiscal_year: d.fiscal_year, stage: d.stage });
   return [...seen.values()].sort((a, b) =>
-    b.fiscal_year - a.fiscal_year || (a.stage === b.stage ? 0 : a.stage === "NEP" ? -1 : 1)
+    b.fiscal_year - a.fiscal_year || stageIndex(b.stage) - stageIndex(a.stage)
   );
 }
 
 export const editionKey = (e: Edition) => `${e.fiscal_year}-${e.stage}`;
 
 export function parseEdition(s: string | undefined, fallback: Edition): Edition {
-  const m = s?.match(/^(\d{4})-(NEP|GAA)$/);
-  return m ? { fiscal_year: Number(m[1]), stage: m[2] as Stage } : fallback;
+  const m = s?.match(/^(\d{4})-([A-Z]+)$/);
+  return m && isStage(m[2]) ? { fiscal_year: Number(m[1]), stage: m[2] } : fallback;
 }
 
 export const editionLabel = (e: Edition) => `FY${e.fiscal_year} ${e.stage}`;
 
-// The comparison that matters most right now, by default: this year's
-// proposal against the budget currently in force.
+// The comparison that matters most right now, by default: a proposal against
+// the budget currently in force; a version in Congress (or the GAA) against
+// the NEP it started from.
 export function defaultComparison(editions: Edition[]): { base: Edition; target: Edition } | null {
   const target = editions[0];
   if (!target) return null;

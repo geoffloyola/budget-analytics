@@ -9,8 +9,9 @@ import {
   parseEdition,
 } from "@/lib/data";
 import { compareAgencies, compareDepartments, inEdition, sum } from "@/lib/analytics";
-import { change, peso, pctDelta, pesoDelta, sectorLabel } from "@/lib/format";
+import { change, peso, pctDelta, pesoDelta, sectorLabel, STAGE_LABEL } from "@/lib/format";
 import { DeltaBar } from "@/components/charts";
+import { stageIndex } from "@/lib/stages";
 import EditionPicker from "@/components/EditionPicker";
 import { EmptyState, Kpi, NoAccess, PageHeader, SampleBanner } from "@/components/Notices";
 
@@ -39,7 +40,8 @@ export default async function Compare({
   const ups = rows.filter((r) => r.abs > 0);
   const downs = rows.filter((r) => r.abs < 0);
   const options = editions.map((e) => ({ value: editionKey(e), label: editionLabel(e) }));
-  const isDeliberation = base.fiscal_year === target.fiscal_year && base.stage === "NEP" && target.stage === "GAA";
+  // Same year, earlier version → later version: changes made in Congress.
+  const isDeliberation = base.fiscal_year === target.fiscal_year && stageIndex(base.stage) < stageIndex(target.stage);
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-8">
@@ -48,7 +50,7 @@ export default async function Compare({
         title={`${editionLabel(base)} → ${editionLabel(target)}`}
         subtitle={
           isDeliberation
-            ? "What Congress changed: the President's proposal against the enacted budget."
+            ? `What changed in Congress between the ${STAGE_LABEL[base.stage]} and the ${STAGE_LABEL[target.stage]}.`
             : "How the budget shifts between two editions. Click a department to see its agencies."
         }
       >

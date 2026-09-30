@@ -16,6 +16,7 @@ import { BarList, TrendChart } from "@/components/charts";
 import EditionPicker from "@/components/EditionPicker";
 import { Kpi, NoAccess, PageHeader, SampleBanner } from "@/components/Notices";
 import LocalFunding from "./LocalFunding";
+import { stageIndex } from "@/lib/stages";
 
 export const dynamic = "force-dynamic";
 
@@ -48,7 +49,7 @@ export default async function District({ searchParams }: { searchParams: { e?: s
 
   const editions: Edition[] = [
     ...new Map(items.map((i) => [`${i.fiscal_year}-${i.stage}`, { fiscal_year: i.fiscal_year, stage: i.stage }])).values(),
-  ].sort((a, b) => b.fiscal_year - a.fiscal_year || (a.stage === "NEP" ? -1 : 1));
+  ].sort((a, b) => b.fiscal_year - a.fiscal_year || stageIndex(b.stage) - stageIndex(a.stage));
   const current = parseEdition(searchParams.e, editions[0]);
   const own = items.filter((i) => i.district !== PROVINCE_WIDE);
   const all = items.filter(inEdition(current)).sort((a, b) => b.amount_thousands - a.amount_thousands);

@@ -2,6 +2,7 @@
 //
 //   npm run import:dbm -- data/sources/NEP-FY2027.xlsx --year 2027 --stage NEP
 //   npm run import:dbm -- data/sources/FY2026-GAA-Byobject.xlsx --year 2026 --stage GAA
+//   stages: NEP, HOUSE, SENATE, BICAM, GAA (the versions during legislation)
 //   add --dry-run to only print the totals
 //
 // Replaces that year+stage in `allocations` (department/agency/expense class)
@@ -22,6 +23,7 @@ import {
   type AllocationKey,
   type DbmRow,
 } from "../lib/dbm";
+import { isStage, STAGE_KEYS } from "../lib/stages";
 
 config({ path: ".env.local" });
 
@@ -82,8 +84,8 @@ async function main() {
   const year = Number(arg("year"));
   const stage = arg("stage")?.toUpperCase();
   const dry = process.argv.includes("--dry-run");
-  if (!file || !Number.isInteger(year) || (stage !== "NEP" && stage !== "GAA")) {
-    console.error("Usage: npm run import:dbm -- <file.xlsx> --year 2027 --stage NEP|GAA [--dry-run]");
+  if (!file || !Number.isInteger(year) || !stage || !isStage(stage)) {
+    console.error(`Usage: npm run import:dbm -- <file.xlsx> --year 2027 --stage ${STAGE_KEYS.join("|")} [--dry-run]`);
     process.exit(1);
   }
   const source = `${stage} FY${year} (DBM, ${path.basename(file)})`;

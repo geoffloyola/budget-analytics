@@ -2,6 +2,7 @@ import { change, peso, pct, pctDelta, SECTORS, sectorLabel } from "@/lib/format"
 import type { AgencyTotal, DepartmentTotal, DistrictItem } from "@/lib/supabase/types";
 import type { ExecutionRow, ExecutionTotal, LgsfProject, LocalRelease } from "@/lib/compass";
 import { editionLabel, type Edition } from "@/lib/data";
+import { stageIndex } from "@/lib/stages";
 
 // Pure calculations shared by the pages and the AI context builder.
 
@@ -119,13 +120,21 @@ export function autoInsights(depts: DepartmentTotal[], current: Edition, prior: 
   return out;
 }
 
-// The prior edition to compare a given one against: same-year NEP for a GAA
-// (what Congress changed), the previous year's GAA for a NEP (what's new).
+// The prior edition to compare a given one against:
+//   NEP     → the previous year's GAA (what's new vs the budget in force)
+//   House/Senate/Bicam → the version just before it in the same year
+//   GAA     → the same year's NEP (everything Congress changed, net of vetoes)
 export function priorEdition(editions: Edition[], e: Edition): Edition | null {
+  if (e.stage === "NEP") {
+    return editions.find((x) => x.stage === "GAA" && x.fiscal_year === e.fiscal_year - 1) ?? null;
+  }
   if (e.stage === "GAA") {
     return editions.find((x) => x.stage === "NEP" && x.fiscal_year === e.fiscal_year) ?? null;
   }
-  return editions.find((x) => x.stage === "GAA" && x.fiscal_year === e.fiscal_year - 1) ?? null;
+  const earlier = editions
+    .filter((x) => x.fiscal_year === e.fiscal_year && stageIndex(x.stage) < stageIndex(e.stage))
+    .sort((a, b) => stageIndex(b.stage) - stageIndex(a.stage));
+  return earlier[0] ?? null;
 }
 
 // Compact CSV of everything the AI needs, in ₱ thousands. Department totals for
