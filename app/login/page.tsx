@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { signIn } from "./actions";
 import FlagEmblem, { PH } from "@/components/FlagEmblem";
-import batasan from "@/public/images/batasan.jpg";
+import houseOfRepresentatives from "@/public/images/house-of-representatives.webp";
 
 export const metadata = { title: "Sign in · Budget Analytics" };
 
@@ -68,15 +68,15 @@ export default function LoginPage({
             </form>
           </div>
 
-          {/* Right: the Batasang Pambansa, tinted blue */}
+          {/* Right: the House of Representatives building, tinted blue */}
           <div className="relative order-2 mt-6 h-56 overflow-hidden sm:h-72 lg:order-none lg:mt-0 lg:h-[38rem]">
             <Image
-              src={batasan}
-              alt="The Batasang Pambansa, home of the House of Representatives, in Quezon City"
+              src={houseOfRepresentatives}
+              alt="The House of Representatives building at the Batasang Pambansa Complex, Quezon City"
               fill
               priority
               sizes="(min-width: 1024px) 60vw, 100vw"
-              className="object-cover object-[60%_45%] contrast-[1.08] grayscale"
+              className="object-cover object-[62%_50%] contrast-[1.08] grayscale"
             />
             <div aria-hidden className="absolute inset-0 mix-blend-multiply" style={{ background: "rgba(0, 56, 168, 0.55)" }} />
             <div aria-hidden className="absolute inset-0 mix-blend-screen" style={{ background: "rgba(90, 130, 210, 0.22)" }} />
@@ -102,7 +102,7 @@ export default function LoginPage({
 
       <footer className="mx-auto w-full max-w-6xl px-6 pb-8 lg:px-10">
         <div className="border-t-2 pt-5" style={{ borderColor: "rgba(0, 56, 168, 0.18)" }}>
-          <dl className="grid gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="grid gap-4 text-sm sm:grid-cols-3">
             <div>
               <dt className="font-display font-semibold tracking-wide text-ink">Office</dt>
               <dd className="text-ink2">Office of the Representative</dd>
@@ -117,19 +117,6 @@ export default function LoginPage({
                 <a href="/help" className="text-accent underline underline-offset-2">
                   User guide
                 </a>
-              </dd>
-            </div>
-            <div>
-              <dt className="font-display font-semibold tracking-wide text-ink">Photo</dt>
-              <dd className="text-ink2">
-                <a href="https://en.wikipedia.org/wiki/File:Batasan_front_qc.jpg" className="underline underline-offset-2" target="_blank" rel="noreferrer">
-                  Batasang Pambansa
-                </a>{" "}
-                by Patrickroque01,{" "}
-                <a href="https://creativecommons.org/licenses/by-sa/4.0/" className="underline underline-offset-2" target="_blank" rel="noreferrer">
-                  CC BY-SA 4.0
-                </a>
-                , tinted
               </dd>
             </div>
           </dl>
