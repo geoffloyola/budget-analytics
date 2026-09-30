@@ -40,6 +40,10 @@ const DEPT_SECTOR: Record<string, Sector> = {
   DND: "defense",
 };
 
+// Departments renamed between budget years, mapped to their current code so
+// trends stay on one line. NEDA became DEPDev (RA 12145, 2025).
+const DEPT_ALIAS: Record<string, string> = { NEDA: "DEPDEV" };
+
 // Special purpose funds / automatic appropriations, by fund name.
 export function spfSector(fund: string): Sector {
   if (/debt interest|net lending/i.test(fund)) return "debt_burden";
@@ -73,7 +77,7 @@ export function allocationKey(r: DbmRow): AllocationKey | null {
     };
   }
   const { name, short } = splitName(r.deptName);
-  const code = short ?? `D${r.deptCode}`;
+  const code = DEPT_ALIAS[short ?? ""] ?? short ?? `D${r.deptCode}`;
   return {
     department_code: code,
     department_name: name,
