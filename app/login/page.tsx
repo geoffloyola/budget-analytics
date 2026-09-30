@@ -29,7 +29,7 @@ export default function LoginPage({
             <div className="order-1 flex items-center gap-3 lg:order-none">
               <FlagEmblem size={46} />
               <div className="font-display leading-tight text-accent">
-                <p className="text-[17px] font-semibold tracking-wide">Office of the Representative</p>
+                <p className="text-[17px] font-semibold tracking-wide">Committee on Appropriations</p>
                 <p className="text-[13px] tracking-wide opacity-80">House of Representatives · Philippines</p>
               </div>
             </div>
@@ -105,7 +105,7 @@ export default function LoginPage({
           <dl className="grid gap-4 text-sm sm:grid-cols-3">
             <div>
               <dt className="font-display font-semibold tracking-wide text-ink">Office</dt>
-              <dd className="text-ink2">Office of the Representative</dd>
+              <dd className="text-ink2">Committee on Appropriations</dd>
             </div>
             <div>
               <dt className="font-display font-semibold tracking-wide text-ink">Committee</dt>

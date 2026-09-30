@@ -6,7 +6,7 @@ import AppShell from "@/components/AppShell";
 // fetches at build time and fails in network-restricted builds.
 export const metadata: Metadata = {
   title: "National Budget Analytics",
-  description: "Budget analysis and insights for the Office of the Representative.",
+  description: "Budget analysis and insights for the Committee on Appropriations.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
