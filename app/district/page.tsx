@@ -7,9 +7,10 @@ import {
   HOME_DISTRICT,
   HOME_PROVINCE,
   parseEdition,
+  PROVINCE_WIDE,
   type Edition,
 } from "@/lib/data";
-import { inEdition, sum } from "@/lib/analytics";
+import { inEdition, priorEdition, sum } from "@/lib/analytics";
 import { change, peso, pct, pctDelta, pesoDelta } from "@/lib/format";
 import { BarList, TrendChart } from "@/components/charts";
 import EditionPicker from "@/components/EditionPicker";
@@ -49,23 +50,28 @@ export default async function District({ searchParams }: { searchParams: { e?: s
     ...new Map(items.map((i) => [`${i.fiscal_year}-${i.stage}`, { fiscal_year: i.fiscal_year, stage: i.stage }])).values(),
   ].sort((a, b) => b.fiscal_year - a.fiscal_year || (a.stage === "NEP" ? -1 : 1));
   const current = parseEdition(searchParams.e, editions[0]);
-  const rows = items.filter(inEdition(current)).sort((a, b) => b.amount_thousands - a.amount_thousands);
+  const own = items.filter((i) => i.district !== PROVINCE_WIDE);
+  const all = items.filter(inEdition(current)).sort((a, b) => b.amount_thousands - a.amount_thousands);
+  const rows = all.filter((i) => i.district !== PROVINCE_WIDE);
+  const provinceWide = all.filter((i) => i.district === PROVINCE_WIDE);
   const total = sum(rows.map((r) => r.amount_thousands));
 
-  // Same stage, previous year, for a like-for-like change.
-  const prev = items.filter((i) => i.stage === current.stage && i.fiscal_year === current.fiscal_year - 1);
+  // NEP vs last year's GAA (what's proposed vs what's in force); GAA vs its NEP.
+  const prior = priorEdition(editions, current);
+  const prev = prior ? own.filter(inEdition(prior)) : [];
   const prevTotal = sum(prev.map((r) => r.amount_thousands));
   const delta = change(prevTotal, total);
 
   const dpwhNational = depts.find((d) => d.department_code === "DPWH" && inEdition(current)(d))?.total ?? 0;
   const dpwhHere = sum(rows.filter((r) => r.department_code === "DPWH").map((r) => r.amount_thousands));
 
-  const byStageYears = [...new Set(items.map((i) => i.fiscal_year))].sort();
+  const byStageYears = [...new Set(own.map((i) => i.fiscal_year))].sort();
   const trendFor = (stage: "NEP" | "GAA") =>
     byStageYears.map((y) => {
-      const v = sum(items.filter((i) => i.stage === stage && i.fiscal_year === y).map((i) => i.amount_thousands));
+      const v = sum(own.filter((i) => i.stage === stage && i.fiscal_year === y).map((i) => i.amount_thousands));
       return v || null;
     });
+  const hasTrend = (["NEP", "GAA"] as const).some((st) => trendFor(st).filter((v) => v != null).length > 1);
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-8">
@@ -86,16 +92,19 @@ export default async function District({ searchParams }: { searchParams: { e?: s
 
       <div className="mb-4 mt-10 border-t border-border pt-8">
         <h2 className="text-lg font-semibold">Proposed & enacted district items: {editionLabel(current)}</h2>
-        <p className="text-sm text-ink2">From imported NEP/GAA project lists.</p>
+        <p className="text-sm text-ink2">
+          From DBM&apos;s NEP/GAA line items: items under the {HOME_DISTRICT} Engineering Office and other offices tied to the
+          district. Province-wide items are listed separately below.
+        </p>
       </div>
       <SampleBanner show={items.some((i) => i.source === "SAMPLE")} />
 
       <section className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <Kpi label={`District total, ${editionLabel(current)}`} value={peso(total)} sub={`${rows.length} line items`} />
         <Kpi
-          label={`vs FY${current.fiscal_year - 1} ${current.stage}`}
+          label={prior ? `vs ${editionLabel(prior)}` : "Change"}
           value={prev.length ? pesoDelta(delta.abs) : "—"}
-          sub={prev.length ? pctDelta(delta.rel) : "No earlier year loaded"}
+          sub={prev.length ? `${pctDelta(delta.rel)} (${peso(prevTotal)} before)` : "No comparable edition loaded"}
           tone={prev.length ? (delta.abs >= 0 ? "up" : "down") : undefined}
         />
         <Kpi
@@ -121,7 +130,7 @@ export default async function District({ searchParams }: { searchParams: { e?: s
         </div>
       </section>
 
-      {byStageYears.length > 1 && (
+      {hasTrend && (
         <section className="card mt-6 p-5">
           <h2 className="section-title">District total over time</h2>
           <div className="mt-3">
@@ -162,6 +171,38 @@ export default async function District({ searchParams }: { searchParams: { e?: s
           </tbody>
         </table>
       </section>
+
+      {provinceWide.length > 0 && (
+        <section className="card mt-6 overflow-x-auto p-5">
+          <h2 className="section-title">
+            Province-wide items, {editionLabel(current)}: {peso(sum(provinceWide.map((r) => r.amount_thousands)))}
+          </h2>
+          <p className="mt-1 text-xs text-muted">
+            Serve all of {HOME_PROVINCE}, e.g. the schools division, provincial hospitals, and projects named for the province
+            without a district engineering office. Not counted in the district total above.
+          </p>
+          <table className="mt-3 w-full min-w-[40rem] text-sm">
+            <thead className="text-left text-xs text-muted">
+              <tr>
+                <th className="py-1.5 font-medium">Item</th>
+                <th className="py-1.5 font-medium">Category</th>
+                <th className="py-1.5 font-medium">Municipality</th>
+                <th className="py-1.5 text-right font-medium">Amount</th>
+              </tr>
+            </thead>
+            <tbody>
+              {provinceWide.map((r) => (
+                <tr key={r.id} className="border-t border-border">
+                  <td className="py-2 pr-3">{r.item}</td>
+                  <td className="py-2 pr-3 text-ink2">{r.category}</td>
+                  <td className="py-2 pr-3 text-ink2">{r.municipality ?? "—"}</td>
+                  <td className="py-2 text-right font-mono text-xs tabular-nums">{peso(r.amount_thousands, 2)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </section>
+      )}
     </main>
   );
 }

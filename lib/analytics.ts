@@ -96,7 +96,7 @@ export function autoInsights(depts: DepartmentTotal[], current: Edition, prior: 
   );
 
   const debt = sum(rows.filter((d) => d.sector === "debt_burden").map((d) => d.total));
-  if (debt) out.push(`Interest payments on debt are ${peso(debt)}, or ${pct(debt / total)} of the budget: money not available for programs.`);
+  if (debt) out.push(`Debt burden (interest payments and net lending) is ${peso(debt)}, or ${pct(debt / total)} of the budget: money not available for programs.`);
 
   const co = sum(rows.map((d) => d.co ?? 0));
   if (co) out.push(`Capital outlays (infrastructure, equipment) are ${peso(co)}, or ${pct(co / total)} of the total.`);

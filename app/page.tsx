@@ -61,7 +61,7 @@ export default async function Overview({ searchParams }: { searchParams: { e?: s
           sub={prior ? pctDelta(delta.rel) : "No earlier edition loaded"}
           tone={prior ? (delta.abs >= 0 ? "up" : "down") : undefined}
         />
-        <Kpi label="Largest department" value={peso(rows[0]?.total)} sub={rows[0]?.department_name} />
+        <Kpi label="Largest item" value={peso(rows[0]?.total)} sub={rows[0]?.department_name} />
         <Kpi label="Capital outlays" value={peso(co)} sub={`${pct(co / total)} of total: infrastructure & equipment`} />
       </section>
 

@@ -35,7 +35,8 @@ async function fetchAll<T>(
 // ---- Demo source ----------------------------------------------------------
 
 const demoData = cache(async () => {
-  const dir = path.join(process.cwd(), "data", "sample");
+  // DEMO_DATA_DIR (dev only) points demo mode at another CSV pair, e.g. an export of real data.
+  const dir = process.env.DEMO_DATA_DIR ?? path.join(process.cwd(), "data", "sample");
   const [alloc, district] = await Promise.all([
     readFile(path.join(dir, "allocations.csv"), "utf8"),
     readFile(path.join(dir, "district_items.csv"), "utf8"),
@@ -117,11 +118,15 @@ export const getAgencyTotals = cache(async (): Promise<AgencyTotal[]> => {
   return rows.map((r) => ({ ...r, total: Number(r.total) }));
 });
 
+// Items that serve the whole province (e.g. the schools division, a provincial
+// hospital) are tagged this way by the DBM importer and shown alongside.
+export const PROVINCE_WIDE = "Province-wide";
+
 export const getDistrictItems = cache(async (): Promise<DistrictItem[]> => {
   if (DEMO_MODE) {
     const { district } = await demoData();
     return district
-      .filter((d) => d.province === HOME_PROVINCE && d.district === HOME_DISTRICT)
+      .filter((d) => d.province === HOME_PROVINCE && (d.district === HOME_DISTRICT || d.district === PROVINCE_WIDE))
       .map((d, i) => ({ ...d, id: i + 1, imported_at: "" }));
   }
   const supabase = createClient();
@@ -130,7 +135,7 @@ export const getDistrictItems = cache(async (): Promise<DistrictItem[]> => {
       .from("district_items")
       .select("*")
       .eq("province", HOME_PROVINCE)
-      .eq("district", HOME_DISTRICT)
+      .in("district", [HOME_DISTRICT, PROVINCE_WIDE])
       .order("fiscal_year")
       .order("id")
       .range(from, to)

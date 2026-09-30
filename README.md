@@ -57,7 +57,22 @@ Caveats:
 - Department figures are authoritative. In a few years, the agency breakdown in the source doesn't sum exactly to its department.
 - To narrow the District lens to the district, set `NEXT_PUBLIC_HOME_MUNICIPALITIES` to the district's municipalities.
 
-## Data format
+## Real NEP / GAA data from DBM
+
+DBM publishes each NEP and GAA as a line-item Excel file ("by object"), e.g. `NEP-FY2027.xlsx` and `FY2026-GAA-Byobject.xlsx`, on dbm.gov.ph. DBM blocks automated downloads, so download them in a browser into `data/sources/` (git-ignored; each is about 65 MB), then:
+
+```bash
+npm run import:dbm -- data/sources/NEP-FY2027.xlsx --year 2027 --stage NEP
+npm run import:dbm -- data/sources/FY2026-GAA-Byobject.xlsx --year 2026 --stage GAA
+```
+
+Each run takes 1–2 minutes. It prints totals to check against DBM's published figures (add `--dry-run` to check without saving), then replaces that year and stage in Supabase:
+- **allocations**: department/agency × expense class; special purpose funds and automatic appropriations (tax allotment, debt interest, pension fund…) each become their own line
+- **district_items**: every line tied to the home province, via its operating unit (e.g. "Bataan 2nd District Engineering Office", "Division of Bataan") or its description. Items under a district engineering office get that district; the rest are "Province-wide"
+
+Sector is assigned per department (lib/dbm.ts), an approximation of DBM's functional classification.
+
+## Data format (manual CSV import)
 
 Amounts are in **₱ thousands**, the unit DBM prints in the GAA/NEP. Templates are in `data/templates/`.
 
